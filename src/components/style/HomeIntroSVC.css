@@ -1,0 +1,10 @@
+.introservice {
+    height: 100%;
+    padding-top: 88px;
+    box-sizing: border-box;
+}
+
+.introsvc-title>h3 {
+    margin-top: 8%;
+    font-size: 40px;
+}
