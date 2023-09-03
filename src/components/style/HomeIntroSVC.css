@@ -8,3 +8,28 @@
     margin-top: 8%;
     font-size: 40px;
 }
+
+.introsvc-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 0 10%;
+    margin-top: 5%;
+}
+
+.introsvc-item>li:nth-child(odd) {
+    margin-right: 17%;
+}
+
+.introsvc-item>li {
+    display: flex;
+    width: 500px;
+    margin-bottom: 5%;
+}
+
+.introsvc-item>li>li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}

@@ -21,15 +21,65 @@
 .nav-tab>ul {
     display: flex;
     flex-direction: row;
+    width: 500px;
 }
 
 .nav-tab>ul>li {
     margin: 0 20px;
     flex: 1;
     font-size: 20px;
+
 }
 
-.tab-link {
+/* nav hover effect code*/
+.nav-tab>ul>li>.tab-link {
+    position: relative;
+    padding: 6px 0;
+}
+
+.nav-tab>ul>li>.tab-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    /*시작 위치*/
+    transform: translateX(-50%);
+    /*동작방향? 범위느낌*/
+    width: 0%;
+    height: 4px;
+    background: darkgray;
+    transition: all 0.3s ease-out;
+}
+
+.nav-tab>ul>li>.tab-link:hover::after {
+    width: 100%;
+}
+
+/*end*/
+
+/*nav dropdownd code*/
+.sub-tab {
+    background: white;
+    border-radius: 10px;
+    padding: 5%;
+    display: none;
+    visibility: hidden;
+    font-size: 18px;
+    margin-top: 25%;
+}
+
+.sub-tab>li {
+    margin: 15% 0;
+}
+
+.main-tab>li:hover ul.sub-tab {
+
+    display: block;
+    visibility: visible;
+}
+
+
+.tab-link,
+.sub-link {
     color: black;
-    text-decoration: none;
 }

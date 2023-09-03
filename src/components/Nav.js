@@ -10,12 +10,30 @@ function Nav() {
                     <Link to='/' className='tab-link'>GUHYUN</Link>
                 </div>
                 <div className='nav-tab'>
-                    <ul>
+                    <ul className='main-tab'>
                         <li>
                             <Link to='/about' className='tab-link'>About</Link>
                         </li>
                         <li>
                             <Link to='/service' className='tab-link'>Service</Link>
+                            <ul className='sub-tab'>
+                                <li>
+                                    <Link to='/education' className='sub-link'>Education</Link>
+
+                                </li>
+                                <li>
+                                    <Link to='/research' className='sub-link'>Rearch</Link>
+
+                                </li>
+                                <li>
+                                    <Link to='/development' className='sub-link'>Development</Link>
+
+                                </li>
+                                <li>
+                                    <Link to='/gsconsulting' className='sub-link'>GS인증 컨설팅</Link>
+
+                                </li>
+                            </ul>
                         </li>
                         <li>
                             <Link to='/contact' className='tab-link'>Contact</Link>
