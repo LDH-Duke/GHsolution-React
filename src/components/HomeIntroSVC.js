@@ -4,6 +4,7 @@ import data from '../data'
 
 function HomeIntroSVC() {
     const contents = data[0].intro_service
+    console.log(contents)
     return (
         <div className='introservice'>
             <div className='wrap-intro-svc'>
@@ -13,13 +14,18 @@ function HomeIntroSVC() {
                 <ul className='introsvc-item'>
                     {
                         contents.map((content, idx) => {
+
+                            // console.log(content, idx)
                             return (
-                                <li className={idx} key={idx}>
-                                    <li>
+                                <li key={idx}>
+                                    < li className='svc-img' >
                                         <img src={content.url} alt='이미지'></img>
+                                        {
+                                            console.log(content.a)
+                                        }
                                     </li>
-                                    <li>
-                                        <span>{content.title}</span><br />
+                                    <li className='svc-item'>
+                                        <span style={{ 'font-weight': 'bold' }}>{content.title}</span><br />
                                         <span>{content.content}</span>
                                     </li>
                                 </li>)
@@ -27,7 +33,7 @@ function HomeIntroSVC() {
                     }
 
                 </ul>
-            </div>
+            </div >
         </div >
     )
 }

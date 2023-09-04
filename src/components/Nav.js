@@ -18,20 +18,19 @@ function Nav() {
                             <Link to='/service' className='tab-link'>Service</Link>
                             <ul className='sub-tab'>
                                 <li>
-                                    <Link to='/education' className='sub-link'>Education</Link>
+                                    <Link to='/education' className='sub-link'>교육</Link>
 
                                 </li>
                                 <li>
-                                    <Link to='/research' className='sub-link'>Rearch</Link>
+                                    <Link to='/research' className='sub-link'>연구</Link>
 
                                 </li>
                                 <li>
-                                    <Link to='/development' className='sub-link'>Development</Link>
+                                    <Link to='/development' className='sub-link'>개발</Link>
 
                                 </li>
                                 <li>
-                                    <Link to='/gsconsulting' className='sub-link'>GS인증 컨설팅</Link>
-
+                                    <Link to='/gsconsulting' className='sub-link'>컨설팅</Link>
                                 </li>
                             </ul>
                         </li>

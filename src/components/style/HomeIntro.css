@@ -2,19 +2,20 @@
     height: 100%;
     padding-top: 88px;
     box-sizing: border-box;
+    margin: 0 10%;
+    border-bottom: 1px solid gray;
 }
 
 
 .intro-title>h3 {
     margin-top: 8%;
     font-size: 40px;
-
 }
 
 .intro-item {
     display: flex;
     align-items: center;
-    margin: 0 10%;
+    /* margin: 0 10%; */
     margin-top: 5%;
 }
 
