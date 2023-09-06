@@ -1,37 +1,38 @@
 .nav {
     display: flex;
     flex-direction: row;
-    margin: 0px 10%;
-    /* border-bottom: 1px solid #d9d9d9; */
+    width: 100%;
     position: fixed;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.22);
     top: 0;
     left: 0;
     right: 0;
-
 }
 
 .wrap-nav {
+    margin: 0 10%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
-    margin: 30px 0;
-
-
 }
 
 .nav-tab>ul {
     display: flex;
     flex-direction: row;
     width: 500px;
+    height: 88px;
+    align-items: center;
 }
 
 .nav-tab>ul>li {
-    margin: 0 20px;
     flex: 1;
     font-size: 20px;
-
+    position: relative;
 }
+
 
 /* nav hover effect code*/
 .nav-tab>ul>li>.tab-link {
@@ -60,17 +61,60 @@
 /*end*/
 
 /*nav dropdownd code*/
+
+
 .sub-tab {
+    position: absolute;
+    right: 10%;
+    top: 70px;
+    width: 80%;
+    background-color: white;
+    font-size: 18px;
+    padding: 5% 0;
+    border-radius: 10px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-out
+}
+
+.main-tab>li:hover ul.sub-tab {
+    visibility: visible;
+    opacity: 1;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+
+}
+
+.sub-tab>li {
+    margin: 15% 0;
+    /* border-radius: 5px; */
+    transition: .3s ease-out;
+    padding: 8px 0;
+}
+
+.sub-tab>li:hover {
+    .sub-link {
+        color: white;
+    }
+
+    background-color: #a9a9a9;
+}
+
+
+
+
+
+
+/* .sub-tab {
     background: white;
     border-radius: 10px;
+    display: none;
     padding: 5%;
-    /* display: none; */
-    visibility: hidden;
     font-size: 18px;
     margin-top: 25%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out, visibility 0s 0.3s;
     opacity: 0;
-    transition: .3s ease-out;
-
 }
 
 .sub-tab>li {
@@ -78,21 +122,21 @@
     border-radius: 5px;
     transition: .3s ease-out;
     padding: 8px 0;
-}
+} */
 
 /*nav sub-tab effect*/
-.sub-tab>li:hover {
+/* .sub-tab>li:hover {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.22);
 }
 
 .main-tab>li:hover ul.sub-tab {
     display: block;
-    visibility: visible;
+    max-height: 1000px;
     opacity: 1;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-    /* transition: 1s ease-out; */
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out, visibility 0s;
 }
-
+ */
 
 .tab-link,
 .sub-link {

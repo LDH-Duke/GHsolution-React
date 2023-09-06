@@ -28,7 +28,20 @@ let data = [
                 url: gs,
             },
         ]
+    },
+    {
+        footer: [
+            {
+                en_title: "GuHyun",
+                kr_title: "(주)구현솔루션",
+                name: "최봉준",
+                address: "부산광역시 사상구 주례로 47, 동서대학교 뉴밀레니엄관 923호",
+                tel: "010-1234-5678",
+                email: "chlqhdwns@naver.com"
+            }
+        ]
     }
+
 
 ]
 
