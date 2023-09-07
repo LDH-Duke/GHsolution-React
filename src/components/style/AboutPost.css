@@ -1,18 +1,14 @@
-.home-post {
+#aboutpost {
     height: 100%;
     padding-top: 88px;
-    margin: 0 10%;
-    box-sizing: border-box;
-
 }
 
-
-.home-post>.wrap-post {
+#aboutpost>.wrap-post {
     height: 100%;
     border-bottom: 1px solid gray;
 }
 
-.home-post>.wrap-post>.post {
+#aboutpost>.wrap-post>.post {
     height: 85%;
     background-color: #d9d9d9;
 }

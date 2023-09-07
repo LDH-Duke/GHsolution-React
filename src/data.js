@@ -40,6 +40,50 @@ let data = [
                 email: "chlqhdwns@naver.com"
             }
         ]
+    },
+    {
+        members: [
+            {
+                img: '',
+                name: '최봉준',
+                position: '대표',
+                degree: '동서대학교 컴퓨터정보공학부 학사',
+                mas_degree: '연세대학교 컴퓨터과학 석사',
+                career: '현 동서대학교 소프크웨어융합대학 조교수',
+                career1: 'LG전자 CTO부문 인공지능연구소 선임연구원',
+                career2: 'Denmark Aalborg University Operation Research Lab Research Assistant',
+            },
+            {
+                img: '',
+                name: '최봉준',
+                position: '대표',
+                degree: '동서대학교 컴퓨터정보공학부 학사',
+                mas_degree: '연세대학교 컴퓨터과학 석사',
+                career: '현 동서대학교 소프크웨어융합대학 조교수',
+                career1: 'LG전자 CTO부문 인공지능연구소 선임연구원',
+                career2: 'Denmark Aalborg University Operation Research Lab Research Assistant',
+            },
+            {
+                img: '',
+                name: '최봉준',
+                position: '대표',
+                degree: '동서대학교 컴퓨터정보공학부 학사',
+                mas_degree: '연세대학교 컴퓨터과학 석사',
+                career: '현 동서대학교 소프크웨어융합대학 조교수',
+                career1: 'LG전자 CTO부문 인공지능연구소 선임연구원',
+                career2: 'Denmark Aalborg University Operation Research Lab Research Assistant',
+            },
+            {
+                img: '',
+                name: '최봉준',
+                position: '대표',
+                degree: '동서대학교 컴퓨터정보공학부 학사',
+                mas_degree: '연세대학교 컴퓨터과학 석사',
+                career: '현 동서대학교 소프크웨어융합대학 조교수',
+                career1: 'LG전자 CTO부문 인공지능연구소 선임연구원',
+                career2: 'Denmark Aalborg University Operation Research Lab Research Assistant',
+            },
+        ]
     }
 
 
