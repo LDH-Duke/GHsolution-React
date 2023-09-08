@@ -84,9 +84,47 @@ let data = [
                 career2: 'Denmark Aalborg University Operation Research Lab Research Assistant',
             },
         ]
-    }
+    },
+    {
+        panel: [
+            {
+                img: '',
+                company: '코드브루잉',
+                name: '김성훈',
+                position: '대표',
+                field: '개발'
+            },
+            {
+                img: '',
+                company: '코드브루잉',
+                name: '김성훈',
+                position: '대표',
+                field: '개발'
+            },
+            {
+                img: '',
+                company: '코드브루잉',
+                name: '김성훈',
+                position: '대표',
+                field: '개발'
+            },
+            {
+                img: '',
+                company: '코드브루잉',
+                name: '김성훈',
+                position: '대표',
+                field: '개발'
+            },
+
+
+        ]
+    },
+    {
+        nav: ['Education.', 'Research.', 'Development.', 'Consulting.']
+    },
 
 
 ]
+
 
 export default data

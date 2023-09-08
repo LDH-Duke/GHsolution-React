@@ -1,0 +1,52 @@
+#servicepost {
+    height: 100%;
+    padding-top: 88px;
+    margin: 0 10%;
+    display: flex;
+    border-bottom: 1px solid black;
+}
+
+#servicepost>.wrap-spost {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+#servicepost>.wrap-spost::before {
+    position: absolute;
+    content: "";
+    left: 80%;
+    width: 145%;
+    height: 90%;
+    background-image: url('../../img/book1.jpg');
+    background-size: 100% 100%;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+#servicepost>div>.service-title {
+    margin-top: 8%;
+    font-size: 200px;
+    font-weight: bold;
+}
+
+#servicepost>div>.service-tabs {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#servicepost>div>ul>.tab {
+    font-size: 70px;
+    font-weight: 600;
+}
+
+#servicepost>div>ul>.tab:hover {
+    color: #00A3FF;
+}
+
+#servicepost>div>ul>.tab>span {
+    /* color: black; */
+    text-shadow: 0 10px 30px rgba(0, 0, 0, 0.548);
+}

@@ -1,0 +1,29 @@
+#aboutintro {
+    height: 100%;
+    padding-top: 88px;
+    margin: 0 10%;
+}
+
+#aboutintro>.wrap-aintro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#aboutintro>div>.aintro-title {
+    margin-top: 8%;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#aboutintro>div>.aintro-contents {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#aboutintro>div>.aintro-img {
+    width: 100%;
+    height: 350px;
+    background: #a9a9a9;
+
+}
