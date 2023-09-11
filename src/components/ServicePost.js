@@ -1,11 +1,16 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import data from '../data'
 import './style/ServicePost.css'
 
 function ServicePost(props) {
-    const tabs = props.tab
-    // console.log(props.shows)
+    const tabs = props.tabs[0]
+
+
+    const activeStyle = {
+        color: '#00A3FF'
+    }
+
     return (
         <div id='servicepost'>
             <div className='wrap-spost'>
@@ -14,10 +19,11 @@ function ServicePost(props) {
                 </div>
                 <ul className='service-tabs'>
                     {
-                        tabs.map((tab, idx) => {
+                        Object.keys(tabs).map((tab, idx) => {
+
                             return (
                                 <li className='tab'>
-                                    <span onClick={props.shows(idx)}>{tab}</span>
+                                    <NavLink to={`/service/${tab}`} style={({ isActive }) => (isActive ? activeStyle : {})} onClick={() => { props.shows(idx) }}>{tabs[tab]}</NavLink>
                                 </li>
                             )
                         })

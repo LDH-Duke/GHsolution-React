@@ -4,9 +4,11 @@ import './style/Service.css'
 import ServicePost from '../components/ServicePost'
 import ServiceEdu from '../components/ServiceEdu'
 import ServiceResearch from '../components/ServiceResearch'
+import Footer from '../components/Footer'
 
 function Service() {
-    const [tab, setTab] = useState(data[4].nav)
+    const tabs = data[4].nav
+
     const [show, setShow] = useState(0)
 
     const serviceitem = () => {
@@ -24,10 +26,11 @@ function Service() {
 
     return (
         <div className='service'>
-            <ServicePost tab={tab} shows={shows} />
+            <ServicePost tabs={tabs} shows={shows} />
             {
                 serviceitem()
             }
+            <Footer />
         </div>
     )
 }

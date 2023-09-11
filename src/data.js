@@ -120,7 +120,29 @@ let data = [
         ]
     },
     {
-        nav: ['Education.', 'Research.', 'Development.', 'Consulting.']
+        nav: [
+            { edu: 'Education.', research: 'Research.', dev: 'Development.', consulting: 'Consulting.' },
+
+        ]
+    },
+    {
+        ent_card: [
+            {
+                img: '',
+                name: 'DataBase',
+                explain: '(주)구현솔루션은 기업의 직원들을 대상으로 Database 교육을 제공합니다.'
+            },
+            {
+                img: '',
+                name: 'DataBase',
+                explain: '(주)구현솔루션은 기업의 직원들을 대상으로 Database 교육을 제공합니다.'
+            },
+            {
+                img: '',
+                name: 'DataBase',
+                explain: '(주)구현솔루션은 기업의 직원들을 대상으로 Database 교육을 제공합니다.'
+            },
+        ]
     },
 
 

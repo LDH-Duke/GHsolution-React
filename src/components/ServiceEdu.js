@@ -1,9 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
+import './style/ServiceEdu.css'
+import EduEnterprise from './EduEnterprise'
+import EduStudents from './EduStudents'
+import EduNav from './EduNav'
 
 function ServiceEdu() {
+    const [show, setShow] = useState(0);
+
+    const setView = (idx) => {
+        setShow(idx)
+    }
+
     return (
         <div className='edu'>
-            교육화면입니다.
+            <EduNav setView={setView} />
+            {
+                show == 0 ? <EduEnterprise /> : <EduStudents />
+            }
         </div>
     )
 }

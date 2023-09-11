@@ -1,0 +1,48 @@
+#students {
+    height: 963px;
+    width: 100%;
+}
+
+#students>.wrap-stu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#students>div>.stu-title {
+    margin-top: 8%;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#students>div>.stu-contents {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#students>div>.stu-items {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+#students>div>.stu-items>ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#students>div>.stu-items>ul>li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 250px;
+    height: 300px;
+    margin: 0 30px;
+    border: 1px solid black;
+}
