@@ -42,11 +42,16 @@
     font-weight: 600;
 }
 
-#servicepost>div>ul>.tab:hover {
+#servicepost>div>ul>.tab>span:hover {
     color: #00A3FF;
 }
 
 #servicepost>div>ul>.tab>span {
-    /* color: black; */
+    color: black;
     text-shadow: 0 10px 30px rgba(0, 0, 0, 0.548);
+}
+
+#servicepost>div>ul>.tab>.selected {
+    color: #00A3FF;
+    text-shadow: 0 10px 30px #eeff05b2;
 }

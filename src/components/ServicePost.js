@@ -5,11 +5,9 @@ import './style/ServicePost.css'
 
 function ServicePost(props) {
     const tabs = props.tabs[0]
+    const setView = props.setView
 
 
-    const activeStyle = {
-        color: '#00A3FF'
-    }
 
     return (
         <div id='servicepost'>
@@ -23,7 +21,7 @@ function ServicePost(props) {
 
                             return (
                                 <li className='tab'>
-                                    <NavLink to={`/service/${tab}`} style={({ isActive }) => (isActive ? activeStyle : {})} onClick={() => { props.shows(idx) }}>{tabs[tab]}</NavLink>
+                                    <span className={props.show === idx ? 'selected' : ''} onClick={() => { setView(idx) }}>{tabs[tab]}</span>
                                 </li>
                             )
                         })

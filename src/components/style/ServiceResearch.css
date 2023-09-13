@@ -1,0 +1,23 @@
+#research-intro {
+    padding-top: 88px;
+    margin: 0 10%;
+}
+
+#research-intro>.wrap-re {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#research-intro>div>.re-title {
+    margin-top: 8%;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#research-intro>div>.re-contents {
+    margin: 10% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
