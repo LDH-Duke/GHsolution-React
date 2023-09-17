@@ -15,22 +15,22 @@ function Nav(props) {
                             <Link to='/about' className='tab-link'>About</Link>
                         </li>
                         <li>
-                            <Link to='/service' className='tab-link'>Service</Link>
+                            <Link to='/service' onClick={() => { props.setView(99) }} className='tab-link'>Service</Link>
                             <ul className='sub-tab'>
                                 <li>
-                                    <Link to='/service' onClick={() => { props.setView(0) }} className='sub-link'>교육</Link>
+                                    <Link to='/service/edu' onClick={() => { props.setView(0) }} className='sub-link'>교육</Link>
 
                                 </li>
                                 <li>
-                                    <Link to='/service' onClick={() => { props.setView(1) }} className='sub-link'>연구</Link>
+                                    <Link to='/service/research' onClick={() => { props.setView(1) }} className='sub-link'>연구</Link>
 
                                 </li>
                                 <li>
-                                    <Link to='/service' onClick={() => { props.setView(2) }} className='sub-link'>개발</Link>
+                                    <Link to='/service/dev' onClick={() => { props.setView(2) }} className='sub-link'>개발</Link>
 
                                 </li>
                                 <li>
-                                    <Link to='/service' onClick={() => { props.setView(3) }} className='sub-link'>컨설팅</Link>
+                                    <Link to='/service/consulting' onClick={() => { props.setView(3) }} className='sub-link'>컨설팅</Link>
                                 </li>
                             </ul>
                         </li>

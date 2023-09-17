@@ -21,6 +21,7 @@
     height: 90%;
     background-image: url('../../img/book1.jpg');
     background-size: 100% 100%;
+    border-radius: 10px;
     opacity: 0.8;
     z-index: -1;
 }
@@ -46,7 +47,7 @@
     color: #00A3FF;
 }
 
-#servicepost>div>ul>.tab>span {
+#servicepost>div>ul>.tab>a {
     color: black;
     text-shadow: 0 10px 30px rgba(0, 0, 0, 0.548);
 }

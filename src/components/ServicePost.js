@@ -21,7 +21,7 @@ function ServicePost(props) {
 
                             return (
                                 <li className='tab'>
-                                    <span className={props.show === idx ? 'selected' : ''} onClick={() => { setView(idx) }}>{tabs[tab]}</span>
+                                    <Link to={`/service/${tab}`} className={props.show === idx ? 'selected' : ''} onClick={() => { setView(idx) }}>{tabs[tab]}</Link>
                                 </li>
                             )
                         })

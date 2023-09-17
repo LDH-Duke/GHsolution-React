@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
 import Service from './pages/Service';
+import Contact from './pages/Contact';
 import { useState } from 'react';
 
 function App() {
@@ -20,7 +21,8 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
-        <Route path='/service' element={<Service show={show} setView={setView} />} />
+        <Route path='/service/*' element={<Service show={show} setView={setView} />} />
+        <Route path='/contact' element={<Contact />} />
       </Routes>
     </div>
   );
