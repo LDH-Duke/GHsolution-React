@@ -6,7 +6,7 @@ function HomeIntroSVC() {
     const contents = data[0].intro_service
     console.log(contents)
     return (
-        <div className='introservice'>
+        <div id='introservice'>
             <div className='wrap-intro-svc'>
                 <div className='introsvc-title'>
                     <h3>GuHyun Service</h3>
@@ -25,9 +25,11 @@ function HomeIntroSVC() {
                                         }
                                     </li>
                                     <li className='svc-item'>
-                                        <span style={{ 'font-weight': 'bold' }}>{content.title}</span><br />
+                                        <span style={{ 'font-weight': 'bold', 'font-size': '30px' }}>{content.title}</span>
                                         <span>{content.content}</span>
+                                        <span>더보기 Click</span>
                                     </li>
+
                                 </li>)
                         })
                     }

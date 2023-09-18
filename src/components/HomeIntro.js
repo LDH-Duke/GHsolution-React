@@ -1,16 +1,17 @@
 import React from 'react'
 import './style/HomeIntro.css'
+import introImg from '../img/image2.png'
 
 function HomeIntro() {
     return (
-        <div className='homeintro'>
+        <div id='homeintro'>
             <div className='wrap-intro'>
                 <div className='intro-title'>
                     <h3>GuHyun</h3>
                 </div>
                 <ul className='intro-item'>
                     <li className='intro-imgbox'>
-                        <img alt='이미지'></img>
+                        <img src={introImg} alt='이미지'></img>
                     </li>
                     <li className='intro-content'>
                         <p>

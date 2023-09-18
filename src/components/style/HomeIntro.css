@@ -1,24 +1,40 @@
-.homeintro {
-    /* height: 963px; */
-    /* padding-top: 88px; */
-    box-sizing: border-box;
-    margin: 8% 10%;
+#homeintro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 963px;
+    margin: 0 210px;
+    padding-top: 88px;
     border-bottom: 1px solid gray;
 }
 
-
-.intro-title>h3 {
-    font-size: 40px;
+#homeintro>div>.intro-title>h3 {
+    position: relative;
+    font-size: 70px;
 }
 
-.intro-item {
+#homeintro>div>.intro-title>h3::after {
+    position: absolute;
+    content: "";
+    left: 45%;
+    top: 50%;
+    /*시작 위치*/
+    transform: translateX(-50%);
+    /*동작방향? 범위느낌*/
+    width: 300px;
+    height: 40px;
+    background: orange;
+    transition: all 0.3s ease-out;
+    z-index: -1;
+}
+
+#homeintro>div>.intro-item {
     display: flex;
     align-items: center;
-    /* margin: 0 10%; */
-    margin-top: 5%;
+    margin-top: 100px;
 }
 
-.intro-item>.intro-imgbox {
+#homeintro>div>.intro-item>.intro-imgbox>img {
     width: 400px;
     height: 500px;
     background-color: #d9d9d9;

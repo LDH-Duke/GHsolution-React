@@ -1,56 +1,86 @@
-.introservice {
+#introservice {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     height: 963px;
-    /* padding-top: 88px; */
-    /* box-sizing: border-box; */
-    margin: 8% 10%;
-    border-bottom: 1px solid gray;
-
+    padding-top: 88px;
+    margin: 0 210px;
 }
 
-.introsvc-title>h3 {
-    margin-top: 8%;
-    font-size: 40px;
+#introservice>div>.introsvc-title>h3 {
+    font-size: 70px;
+    position: relative;
 }
 
-.introsvc-item {
+#introservice>div>.introsvc-title>h3::after {
+    position: absolute;
+    content: "";
+    left: 42%;
+    top: 50%;
+    /*시작 위치*/
+    transform: translateX(-50%);
+    /*동작방향? 범위느낌*/
+    width: 500px;
+    height: 40px;
+    background: orange;
+    transition: all 0.3s ease-out;
+    z-index: -1;
+}
+
+#introservice>div>.introsvc-item {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    /* margin: 0 10%; */
+    justify-content: space-between;
     margin-top: 5%;
 }
 
-.introsvc-item>li:nth-child(odd) {
-    margin-right: 17%;
-
-}
-
-.introsvc-item>li {
+#introservice>div>.introsvc-item>li {
     display: flex;
-    width: 500px;
-    margin-bottom: 10%;
-    border-radius: 5px;
+    flex: calc(50% - 50px);
+    max-width: 750px;
+    min-width: 300px;
+    height: 200px;
+    margin: 30px 25px;
     padding: 20px 15px;
+    border-radius: 5px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.22);
 }
 
-.introsvc-item>li:hover {
+#introservice>div>.introsvc-item>li:hover {
     box-shadow: 0px 10px 30px rgba(0, 81, 255, 0.418);
 
 }
 
-.introsvc-item>li>li {
+#introservice>div>.introsvc-item>li>li {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+
 }
 
-.introsvc-item>li>.svc-img {
+
+#introservice>div>.introsvc-item>li>.svc-img {
     width: 100px;
+    min-width: 100px;
     align-items: center;
+
 }
 
-.introsvc-item>li>.svc-item {
-    width: 400px;
+#introservice>div>.introsvc-item>li>.svc-item {
+    width: 100%;
+    position: relative;
+}
+
+#introservice>div>.introsvc-item>li>.svc-item span:nth-child(-n+2) {
+    margin-bottom: 10px;
+}
+
+#introservice>div>.introsvc-item>li .svc-item span:nth-child(3) {
+    position: absolute;
+    margin-left: auto;
+    /* 3번째 span 요소를 오른쪽으로 밀어내기 */
+    right: 0%;
+    bottom: 0%;
+    color: darkgray;
 }
