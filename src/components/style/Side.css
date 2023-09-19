@@ -1,0 +1,21 @@
+#side {
+    color: black;
+    position: fixed;
+    top: 50%;
+    right: 90px;
+    z-index: 1;
+}
+
+#side>div>ul>li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+#side>div>ul>li>.dot {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background: black;
+    margin: 0 10px;
+}

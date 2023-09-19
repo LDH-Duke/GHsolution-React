@@ -3,7 +3,7 @@
     flex-direction: row;
     width: 100%;
     position: fixed;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.22);
     /* top: 0;
     left: 0;
@@ -51,7 +51,7 @@
     /*동작방향? 범위느낌*/
     width: 0%;
     height: 4px;
-    background: darkgray;
+    background: orange;
     transition: all 0.3s ease-out;
 }
 
