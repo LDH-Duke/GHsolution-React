@@ -1,4 +1,7 @@
 #aboutintro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     height: 963px;
     padding-top: 88px;
     margin: 0 10%;
@@ -11,8 +14,24 @@
 }
 
 #aboutintro>div>.aintro-title {
-    font-size: 40px;
+    font-size: 70px;
     font-weight: bold;
+    position: relative;
+}
+
+#aboutintro>div>.aintro-title::after {
+    position: absolute;
+    content: "";
+    left: 45%;
+    top: 50%;
+    /*시작 위치*/
+    transform: translateX(-50%);
+    /*동작방향? 범위느낌*/
+    width: 300px;
+    height: 40px;
+    background: orange;
+    transition: all 0.3s ease-out;
+    z-index: -1;
 }
 
 #aboutintro>div>.aintro-contents {

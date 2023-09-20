@@ -4,7 +4,6 @@ import data from '../data'
 
 function Footer() {
     const items = data[1].footer[0]
-    console.log(items)
 
     return (
         <div className='footer'>

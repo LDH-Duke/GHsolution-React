@@ -1,19 +1,31 @@
 #panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     height: 963px;
     padding-top: 88px;
     margin: 0 10%;
 }
 
-#panel>.wrap-panel {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+#panel>div>.panel-title {
+    position: relative;
+    font-size: 70px;
+    font-weight: bold;
 }
 
-#panel>div>.panel-title {
-    margin-top: 8%;
-    font-size: 40px;
-    font-weight: bold;
+#panel>div>.panel-title::after {
+    position: absolute;
+    content: "";
+    left: 45%;
+    top: 50%;
+    /*시작 위치*/
+    transform: translateX(-50%);
+    /*동작방향? 범위느낌*/
+    width: 490px;
+    height: 40px;
+    background: orange;
+    transition: all 0.3s ease-out;
+    z-index: -1;
 }
 
 #panel>div>.panel-intro {
@@ -40,7 +52,7 @@
 }
 
 #panel>div>ul>.panel:hover {
-    box-shadow: 0px 20px 30px rgba(0, 162, 255, 0.644), 0 10px 10px rgba(0, 0, 0, 0.22);
+    box-shadow: 0px 20px 30px orange, 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 #panel>div>ul>li>.panel-img {

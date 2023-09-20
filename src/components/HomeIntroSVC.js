@@ -4,7 +4,6 @@ import data from '../data'
 
 function HomeIntroSVC() {
     const contents = data[0].intro_service
-    console.log(contents)
     return (
         <div id='introservice'>
             <div className='wrap-intro-svc'>
@@ -20,9 +19,6 @@ function HomeIntroSVC() {
                                 <li key={idx}>
                                     < li className='svc-img' >
                                         <img src={content.url} alt='이미지'></img>
-                                        {
-                                            console.log(content.a)
-                                        }
                                     </li>
                                     <li className='svc-item'>
                                         <span style={{ 'font-weight': 'bold', 'font-size': '30px' }}>{content.title}</span>

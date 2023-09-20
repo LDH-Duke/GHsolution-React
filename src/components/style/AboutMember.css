@@ -1,10 +1,13 @@
 /* #aboutmember */
 
 #aboutmember {
+    display: flex;
+    justify-content: center;
     padding-top: 88px;
     border-bottom: 1px solid gray;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     margin: 0 10%;
+    height: 1500px;
 }
 
 #aboutmember>.wrap-member {
@@ -16,9 +19,24 @@
 }
 
 #aboutmember>div>.mem-title {
-    margin-top: 8%;
-    font-size: 40px;
+    font-size: 70px;
     font-weight: bold;
+    position: relative;
+}
+
+#aboutmember>div>.mem-title::after {
+    position: absolute;
+    content: "";
+    left: 45%;
+    top: 50%;
+    /*시작 위치*/
+    transform: translateX(-50%);
+    /*동작방향? 범위느낌*/
+    width: 300px;
+    height: 40px;
+    background: orange;
+    transition: all 0.3s ease-out;
+    z-index: -1;
 }
 
 #aboutmember>div>.mem-items {

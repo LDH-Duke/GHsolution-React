@@ -145,7 +145,27 @@ let data = [
             },
         ]
     },
-
+    {
+        componentData: [
+            {
+                name: 'home',
+                sections: {
+                    'Main': 963,
+                    'Introduction': 963,
+                    'service': 963
+                }
+            },
+            {
+                name: 'about',
+                sections: {
+                    'Main': 963,
+                    'Introduction': 963,
+                    'Members': 1500,
+                    'panels': 963
+                }
+            },
+        ]
+    }
 
 ]
 
