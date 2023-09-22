@@ -4,6 +4,7 @@
     top: 50%;
     right: 30px;
     z-index: 1;
+    background-color: white;
 }
 
 #side>div>ul>li {

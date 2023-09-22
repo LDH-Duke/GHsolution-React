@@ -6,12 +6,6 @@ function Side(props) {
     const [sc, setSc] = useState(0);
 
     const datas = props.data;
-    console.log(datas)
-
-    // const sc = window.addEventListener('scroll', (e) => {
-    //     return window.scrollY
-    // })
-
 
     useEffect(() => {
         const handleScroll = () => {
@@ -26,50 +20,72 @@ function Side(props) {
     }, [])
 
 
-    const moveScorll = (tab) => {
+    const testScroll = (idx) => {
+        const arrTab = Object.entries(datas)
+        let i = 0
+        let sumHeight = 0
 
-        if (tab == 'main') {
+        const frontComHeight = 0
+        if (idx - 1 < 0) {
             window.scrollTo({ top: 0, behavior: 'smooth' })
-        }
-        else if (tab == 'introduction') {
-            window.scrollTo({ top: 964, behavior: 'smooth' })
-        } else if (tab == 'service') {
-            window.scrollTo({ top: 1928, behavior: 'smooth' })
+        } else {
+            while (i < idx) {
+                sumHeight += arrTab[i][1]
+                i++
+            }
+            window.scrollTo({ top: sumHeight + 1, behavior: 'smooth' })
         }
 
     }
 
-    const active1 = sc < 643 ? 'selected' : '';
-    const active2 = sc >= 643 && sc < 1607 ? 'selected' : '';
-    const active3 = sc >= 1607 ? 'selected' : '';
+    const selected = (idx) => {
+        const arrTab = Object.entries(datas)
+        let allHeight = 0
+        let i = 0
+        let startH = 0
+
+
+        arrTab.forEach((h) => {
+            allHeight += h[1]
+        })
+
+        if (idx - 1 < 0) {
+            return sc < (arrTab[idx][1] * 2 / 3) + 1 ? 'selected' : ''
+        } else {
+            while (i < idx) {
+                startH += arrTab[i][1]
+                i++
+            }
+            console.log("시작위치" + startH)
+            console.log('내사이즈' + arrTab[idx][1])
+            console.log(idx + '시작:' + (startH - (arrTab[idx - 1][1] * 1 / 3)))
+            console.log('끝:' + ((startH * 2 / 3) + arrTab[idx][1] + 1))
+            console.log('현재:' + sc)
+
+            return sc > startH - (arrTab[idx - 1][1] * 1 / 3) && sc < (startH) + (arrTab[idx][1] * 2 / 3) ? 'selected' : ''
+        }
+
+
+
+
+
+    }
+    const selectedV = (idx) => selected(idx)
 
     return (
         <div id='side'>
             <div className='wrap-side'>
                 <ul>
                     {
-                        Object.keys(datas).map((sidetab) => {
+                        Object.keys(datas).map((sidetab, idx) => {
                             return (
-                                <li id={sidetab.toLowerCase()} onClick={() => { moveScorll(sidetab.toLowerCase()) }}>
-                                    <i className={'dot' + active1}></i>
+                                <li id={sidetab.toLowerCase()} onClick={() => { testScroll(idx) }}>
+                                    <i className={'dot ' + (selectedV(idx))}></i>
                                     <p>{sidetab}</p>
                                 </li>
                             )
                         })
                     }
-
-                    <li id='main' onClick={() => { moveScorll('main') }} >
-                        <i className={'dot ' + active1}></i>
-                        <p>Main</p>
-                    </li>
-                    <li id='introduction' onClick={() => { moveScorll('introduction') }} >
-                        <i className={'dot ' + active2}></i>
-                        <p>Introdution</p>
-                    </li>
-                    <li id='service' onClick={() => { moveScorll('service') }}>
-                        <i className={'dot ' + active3}></i>
-                        <p>Service</p>
-                    </li>
                 </ul>
             </div>
         </div >
