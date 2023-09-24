@@ -76,7 +76,7 @@
     margin-bottom: 10px;
 }
 
-#introservice>div>.introsvc-item>li .svc-item span:nth-child(3) {
+#introservice>div>.introsvc-item>li .svc-item a {
     position: absolute;
     margin-left: auto;
     /* 3번째 span 요소를 오른쪽으로 밀어내기 */

@@ -7,7 +7,7 @@ import Side from '../components/Side'
 import './style/Home.css'
 import data from '../data'
 
-function Home() {
+function Home(props) {
 
     const datas = data[6].componentData[0].sections
     console.log(datas)
@@ -17,7 +17,7 @@ function Home() {
             <Side data={datas} />
             <HomePost />
             <HomeIntro />
-            <HomeIntroSVC />
+            <HomeIntroSVC setView={props.setView}/>
             <Footer />
         </div>
     )

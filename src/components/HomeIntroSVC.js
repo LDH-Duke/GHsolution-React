@@ -1,8 +1,9 @@
 import React from 'react'
 import './style/HomeIntroSVC.css'
 import data from '../data'
+import { Link } from 'react-router-dom'
 
-function HomeIntroSVC() {
+function HomeIntroSVC(props) {
     const contents = data[0].intro_service
     return (
         <div id='introservice'>
@@ -16,14 +17,14 @@ function HomeIntroSVC() {
 
                             // console.log(content, idx)
                             return (
-                                <li key={idx}>
+                                <li key={idx} onClick={()=>{props.setView(idx)}}>
                                     < li className='svc-img' >
-                                        <img src={content.url} alt='이미지'></img>
+                                        <img src={content.img} alt='이미지'></img>
                                     </li>
                                     <li className='svc-item'>
                                         <span style={{ 'font-weight': 'bold', 'font-size': '30px' }}>{content.title}</span>
                                         <span>{content.content}</span>
-                                        <span>더보기 Click</span>
+                                        <Link to={`/service/${content.url}`}>더보기 Click</Link>
                                     </li>
 
                                 </li>)

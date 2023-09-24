@@ -13,6 +13,7 @@ function App() {
   const [show, setShow] = useState(0)
 
   const setView = (idx) => {
+    console.log(idx)
     setShow(idx)
   }
 
@@ -20,7 +21,7 @@ function App() {
     <div className="App">
       <Nav show={show} setView={setView} />
       <Routes>
-        <Route path='/' element={<Home />} />
+        <Route path='/' element={<Home setView={setView}/> }/>
         <Route path='/about' element={<About />} />
         <Route path='/service/*' element={<Service show={show} setView={setView} />} />
         <Route path='/contact' element={<Contact />} />

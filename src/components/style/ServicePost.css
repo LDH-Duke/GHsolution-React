@@ -39,18 +39,49 @@
 }
 
 #servicepost>div>ul>.tab {
+    position: relative;
     font-size: 70px;
     font-weight: 600;
 }
 
-#servicepost>div>ul>.tab>span:hover {
-    color: #ffa500;
+#servicepost>div>ul>.tab::after{
+    content: "";
+    position: absolute;
+    bottom: 5%;
+    left: -70px;
+    /*시작 위치*/
+    transform: translateX(0%);
+    /*동작방향? 범위느낌*/
+    width: 0%;
+    height: 40px;
+    background: orange;
+    border-radius: 5px ;
+    transition: all 0.8s ease-out;
+    z-index: -1;
 }
 
-#servicepost>div>ul>.tab>a {
+#servicepost>div>ul>.tab:hover::after{
+    width: 100%;
+}
+
+#servicepost>div>ul>.tab>a{
     color: black;
 }
 
-#servicepost>div>ul>.tab>.selected {
-    color: orange;
+#servicepost>div>ul>.tab>a::after {
+    content: "";
+    position: absolute;
+    bottom: 5%;
+    left: -70px;
+    /*동작방향? 범위느낌*/
+    width: 0%;
+    height: 40px;
+    border-radius: 5px ;
+    background: orange;
+    transition: all 0.8s ease-out;
+    z-index: -1;
+}
+
+#servicepost>div>ul>.tab>.selected::after {
+    width: 100%;
 }

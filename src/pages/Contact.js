@@ -1,24 +1,25 @@
 import React from 'react'
 import data from '../data'
-
+import './style/Contact.css'
 
 function Contact() {
-    const datas = data[1].footer
+    const datas = data[1].footer[0]
+    console.log(datas)
 
     return (
         <div id='contact'>
             <div className='wrap-contact'>
                 <div className='contact-title'>
-                    <span>Contact</span>
+                    {/* <span>Contact</span> */}
                 </div>
                 <div className='contact-item'>
                     <div className='con-name'>
                         <sapn>GuHyun</sapn>
                     </div>
                     <ul>
-                        <li>{datas.address}</li>
-                        <li>{datas.tel}</li>
-                        <li>{datas.email}</li>
+                        <li>Address : {datas.address}</li>
+                        <li>Tel : {datas.tel}</li>
+                        <li>e-mail : {datas.email}</li>
                     </ul>
                 </div>
             </div>
