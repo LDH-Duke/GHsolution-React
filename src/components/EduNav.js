@@ -5,8 +5,15 @@ function EduNav(porps) {
 
     return (
         <div id='edunav'>
-            <span onClick={() => { setView(0) }}>Enterprise</span>
-            <span onClick={() => { setView(1) }}>Students</span>
+            <ul className='wrap-edunav'>
+                <li>
+                    <span onClick={() => { setView(0) }}>Enterprise</span>
+                </li>
+                <li>
+                    <span onClick={() => { setView(1) }}>Students</span>
+                </li>
+            </ul>
+
         </div>
     )
 }

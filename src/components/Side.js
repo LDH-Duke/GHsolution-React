@@ -44,7 +44,6 @@ function Side(props) {
         let i = 0
         let startH = 0
 
-
         arrTab.forEach((h) => {
             allHeight += h[1]
         })
@@ -56,20 +55,10 @@ function Side(props) {
                 startH += arrTab[i][1]
                 i++
             }
-            console.log("시작위치" + startH)
-            console.log('내사이즈' + arrTab[idx][1])
-            console.log(idx + '시작:' + (startH - (arrTab[idx - 1][1] * 1 / 3)))
-            console.log('끝:' + ((startH * 2 / 3) + arrTab[idx][1] + 1))
-            console.log('현재:' + sc)
-
             return sc > startH - (arrTab[idx - 1][1] * 1 / 3) && sc < (startH) + (arrTab[idx][1] * 2 / 3) ? 'selected' : ''
         }
-
-
-
-
-
     }
+
     const selectedV = (idx) => selected(idx)
 
     return (

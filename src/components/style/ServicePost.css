@@ -44,15 +44,13 @@
 }
 
 #servicepost>div>ul>.tab>span:hover {
-    color: #00A3FF;
+    color: #ffa500;
 }
 
 #servicepost>div>ul>.tab>a {
     color: black;
-    text-shadow: 0 10px 30px rgba(0, 0, 0, 0.548);
 }
 
 #servicepost>div>ul>.tab>.selected {
-    color: #00A3FF;
-    text-shadow: 0 10px 30px #eeff05b2;
+    color: orange;
 }

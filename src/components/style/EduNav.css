@@ -1,4 +1,13 @@
 #edunav {
+    padding: 30px;
+    font-size: 20px;
+}
+
+#edunav>ul {
     display: flex;
     justify-content: space-evenly;
+}
+
+#edunav>ul>li {
+    flex: 1;
 }

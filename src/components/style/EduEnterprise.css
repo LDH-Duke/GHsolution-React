@@ -1,6 +1,8 @@
 #enterprise {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     height: 963px;
-    width: 100%;
     padding-top: 88px;
 }
 
@@ -11,9 +13,24 @@
 }
 
 #enterprise>div>.ent-title {
-    margin-top: 8%;
-    font-size: 40px;
+    position: relative;
+    font-size: 70px;
     font-weight: bold;
+}
+
+#enterprise>div>.ent-title::after {
+    position: absolute;
+    content: "";
+    left: 30%;
+    top: 50%;
+    /*시작 위치*/
+    transform: translateX(-50%);
+    /*동작방향? 범위느낌*/
+    width: 550px;
+    height: 40px;
+    background: orange;
+    transition: all 0.3s ease-out;
+    z-index: -1;
 }
 
 #enterprise>div>.ent-contents {
