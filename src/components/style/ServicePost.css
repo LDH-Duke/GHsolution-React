@@ -1,7 +1,7 @@
 #servicepost {
     height: 100%;
     padding-top: 88px;
-    margin: 0 10%;
+    margin: 0 210px;
     display: flex;
     border-bottom: 1px solid black;
 }
@@ -16,7 +16,7 @@
 #servicepost>.wrap-spost::before {
     position: absolute;
     content: "";
-    left: 80%;
+    left: 74%;
     width: 145%;
     height: 90%;
     background-image: url('../../img/book1.jpg');
@@ -44,7 +44,7 @@
     font-weight: 600;
 }
 
-#servicepost>div>ul>.tab::after{
+#servicepost>div>ul>.tab::after {
     content: "";
     position: absolute;
     bottom: 5%;
@@ -55,16 +55,16 @@
     width: 0%;
     height: 40px;
     background: orange;
-    border-radius: 5px ;
+    border-radius: 5px;
     transition: all 0.8s ease-out;
     z-index: -1;
 }
 
-#servicepost>div>ul>.tab:hover::after{
+#servicepost>div>ul>.tab:hover::after {
     width: 100%;
 }
 
-#servicepost>div>ul>.tab>a{
+#servicepost>div>ul>.tab>a {
     color: black;
 }
 
@@ -76,7 +76,7 @@
     /*동작방향? 범위느낌*/
     width: 0%;
     height: 40px;
-    border-radius: 5px ;
+    border-radius: 5px;
     background: orange;
     transition: all 0.8s ease-out;
     z-index: -1;
