@@ -7,7 +7,7 @@ function Nav(props) {
         <div className='nav'>
             <div className='wrap-nav'>
                 <div className='nav-logo'>
-                    <Link to='/' className='tab-link'>GUHYUN</Link>
+                    <Link to='/' className='tab-link'>GUHYEON</Link>
                 </div>
                 <div className='nav-tab'>
                     <ul className='main-tab'>

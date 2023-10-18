@@ -10,19 +10,19 @@ let data = [
                 title: "Education",
                 content: "기업 및 학생을 대상으로 각각의 요구에 맞는 교육 서비스를 제공합니다.",
                 img: edu,
-                url:'edu'
+                url: 'edu'
             },
             {
                 title: "Rearch",
                 content: "사용자가 요구한 분야에 대한 연구 서비스를 제공합니다.",
                 img: research,
-                url:'research'
+                url: 'research'
             },
             {
                 title: "Development",
                 content: "사용자가 필요한 서비스에 대해 이야기하여 목적에 맞는 서비스를 개발합니다.사용자가 필요한 서비스에 대해 이야기하여 목적에 맞는 서비스를 개발합니다.",
                 img: dev,
-                url:'dev'
+                url: 'dev'
             },
             {
                 title: "GS인증 컨설팅 ",
@@ -36,12 +36,12 @@ let data = [
     {
         footer: [
             {
-                en_title: "GuHyun",
+                en_title: "Guhyeon Solution Co., Ltd",
                 kr_title: "(주)구현솔루션",
                 name: "최봉준",
-                address: "부산광역시 사상구 주례로 47, 동서대학교 뉴밀레니엄관 923호",
-                tel: "010-1234-5678",
-                email: "chlqhdwns@naver.com"
+                address: "부산광역시 사상구 주례로 47, 동서대학교 뉴밀레니엄관 1004호",
+                tel: "051-320-4288",
+                email: "bongjun.choi@dongseo.ac.kr"
             }
         ]
     },

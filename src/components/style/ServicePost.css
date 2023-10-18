@@ -19,7 +19,8 @@
     left: 74%;
     width: 145%;
     height: 90%;
-    background-image: url('../../img/book1.jpg');
+    background-color: gray;
+    /* background-image: url('../../img/book1.jpg'); */
     background-size: 100% 100%;
     border-radius: 10px;
     opacity: 0.8;

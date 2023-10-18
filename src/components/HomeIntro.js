@@ -14,10 +14,10 @@ function HomeIntro() {
                         <img src={introImg} alt='이미지'></img>
                     </li>
                     <li className='intro-content'>
-                        <p>
-                            (주)구현솔루션sadsadsadsadsads은<br />
-                            xzcxzcxz
-                            adsadsa
+                        <p align="left">
+                            메인화면 (주)구현솔루션 소개글입니다.<br />
+                            간략하게 소개글 입력
+                            간략하게 소개글 입력간략하게 소개글 입력
                         </p>
                     </li>
                 </ul>

@@ -14,7 +14,7 @@ function Contact() {
                 </div>
                 <div className='contact-item'>
                     <div className='con-name'>
-                        <sapn>GuHyun</sapn>
+                        <sapn>GuHyeon</sapn>
                     </div>
                     <ul>
                         <li>Address : {datas.address}</li>
