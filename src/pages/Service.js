@@ -5,6 +5,7 @@ import './style/Service.css'
 import ServicePost from '../components/ServicePost'
 import ServiceEdu from '../components/ServiceEdu'
 import ServiceResearch from '../components/ServiceResearch'
+import ServiceConsulting from '../components/ServiceConsulting';
 import Footer from '../components/Footer'
 
 
@@ -40,6 +41,7 @@ function Service(props) {
             <Routes>
                 <Route path='/edu' element={<ServiceEdu />} exact />
                 <Route path='/research' element={<ServiceResearch />} exact />
+                <Route path='/consulting' element={<ServiceConsulting />} exact />
             </Routes>
 
             <Footer />
