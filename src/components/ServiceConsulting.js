@@ -1,6 +1,7 @@
 import React from 'react'
 import './style/ServiceConsulting.css'
 import data from '../data'
+import gslogo from '../img/gs.png'
 
 function ServiceConsulting() {
     const keywords = data[7].GStarget
@@ -16,7 +17,7 @@ function ServiceConsulting() {
                     </div>
                     <div className='intro-contents'>
                         <div className='img'>
-                            <img alt='이미지'></img>
+                            <img src={gslogo} alt='이미지'></img>
                         </div>
                         <div className='text'>
                             <span align="left">
@@ -30,6 +31,9 @@ function ServiceConsulting() {
                 <div className='target'>
                     <div className='title'>
                         컨설팅 분야
+                    </div>
+                    <div className='explain'>
+                        구현 솔루션은 소프트웨어와 관련된 모든 분야에 대해 컨설팅을 진행합니다.
                     </div>
                     <div className='target-contents'>
                         {
@@ -47,17 +51,19 @@ function ServiceConsulting() {
                     <div className='title'>
                         컨설팅 과정
                     </div>
+
                     <div className='proc-contents'>
                         <ul className='wrap-card'>
                             {
                                 cards.map((card, idx) => {
                                     return (
                                         <li className='proc-card'>
-                                            <div className='header'>
-                                                <img alt='img'></img>
+                                            <div className='card-header'>
+                                                {/* <img  alt='img'></img> */}
+                                                <iconWrapper>{card.icon()}</iconWrapper>
                                                 <span className='card-title'>{card.title}</span>
                                             </div>
-                                            <div className='proc-body'>
+                                            <div className='card-body'>
                                                 {
                                                     card.contents.map((text, idx) => {
                                                         return (
