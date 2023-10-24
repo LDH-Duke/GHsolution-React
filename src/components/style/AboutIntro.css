@@ -3,8 +3,8 @@
     flex-direction: column;
     justify-content: center;
     height: 963px;
-    padding-top: 88px;
-    margin: 0 210px;
+    /* padding-top: 88px; */
+    margin: 0 350px;
 }
 
 #aboutintro>.wrap-aintro {
@@ -41,7 +41,12 @@
 
 #aboutintro>div>.aintro-img {
     width: 100%;
-    height: 350px;
-    background: #a9a9a9;
+    height: 400px;
+    /* background: #a9a9a9; */
+}
 
+#aboutintro>div>.aintro-img>img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
 }

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import HomePost from '../components/HomePost'
 import HomeIntro from '../components/HomeIntro'
+import AboutIntro from '../components/AboutIntro'
 import HomeIntroSVC from '../components/HomeIntroSVC'
 import Footer from '../components/Footer'
 import Side from '../components/Side'
@@ -16,7 +17,7 @@ function Home(props) {
         <div className='home'>
             <Side data={datas} />
             <HomePost />
-            <HomeIntro />
+            <AboutIntro />
             <HomeIntroSVC setView={props.setView}/>
             <Footer />
         </div>

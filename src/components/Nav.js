@@ -7,13 +7,13 @@ function Nav(props) {
         <div className='nav'>
             <div className='wrap-nav'>
                 <div className='nav-logo'>
-                    <Link to='/' className='tab-link'>GUHYEON</Link>
+                    <Link to='/' className='tab-link'>(주)구현솔루션</Link>
                 </div>
                 <div className='nav-tab'>
                     <ul className='main-tab'>
-                        <li>
+                        {/* <li>
                             <Link to='/about' className='tab-link'>About</Link>
-                        </li>
+                        </li> */}
                         <li>
                             <Link to='/service' onClick={() => { props.setView(99) }} className='tab-link'>Service</Link>
                             <ul className='sub-tab'>

@@ -8,25 +8,25 @@ let data = [
         intro_service: [
             {
                 title: "Education",
-                content: "기업 및 학생을 대상으로 각각의 요구에 맞는 교육 서비스를 제공합니다.",
+                content: "기업 및 초·중·고 학생을 대상으로 필요한 SW교육을 지원합니다.",
                 img: edu,
                 url: 'edu'
             },
             {
                 title: "Rearch",
-                content: "사용자가 요구한 분야에 대한 연구 서비스를 제공합니다.",
+                content: "인공지능, 빅데이터 등 최신 기술들을 활용한 연구를 수행합니다.",
                 img: research,
                 url: 'research'
             },
             {
                 title: "Development",
-                content: "사용자가 필요한 서비스에 대해 이야기하여 목적에 맞는 서비스를 개발합니다.사용자가 필요한 서비스에 대해 이야기하여 목적에 맞는 서비스를 개발합니다.",
+                content: "소프트웨어는 잘 모르지만 아이디어만 있는 경우 구현에서 아이디어 기획부터 함께 진행하며 프로토타입을 통해 아이템의 가능성을 보여드립니다.",
                 img: dev,
                 url: 'dev'
             },
             {
                 title: "GS인증 컨설팅 ",
-                content: "GS인증을 위한 컨설팅 서비스를 제공합니다.",
+                content: "GS(Good Software)인증 획득 시간을 줄일 수 있도록 GS인증 전문가가 컨설팅 해드립니다.",
                 img: gs,
                 url: 'consulting'
             },
