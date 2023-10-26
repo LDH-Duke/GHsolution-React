@@ -62,11 +62,13 @@
     flex: 1;
     align-items: flex-start;
     padding: 30px;
+    margin-left: 50px;
 }
 
 #consulting>div>div>div>div>span {
     font-size: 26px;
     font-weight: 500;
+    line-height: 200%;
 }
 
 /*target*/

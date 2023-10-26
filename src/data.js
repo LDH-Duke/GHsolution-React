@@ -26,7 +26,7 @@ let data = [
             },
             {
                 title: "GS인증 컨설팅 ",
-                content: "GS(Good Software)인증 획득 시간을 줄일 수 있도록 GS인증 전문가가 컨설팅 해드립니다.",
+                content: "GS(Good Software)인증 획득 시간을 줄일 수 있도록\n GS인증 전문가가 컨설팅 해드립니다.",
                 img: gs,
                 url: 'consulting'
             },

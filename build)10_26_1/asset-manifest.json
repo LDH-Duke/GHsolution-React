@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.90af462c.css",
+    "main.js": "/static/js/main.7b6ea633.js",
+    "static/js/787.c1f1395e.chunk.js": "/static/js/787.c1f1395e.chunk.js",
+    "static/media/image2.png": "/static/media/image2.c7e96f097504b47e8f65.png",
+    "static/media/brick-wall1920.jpg": "/static/media/brick-wall1920.29623c62b412428e7f78.jpg",
+    "static/media/orangewall.jpg": "/static/media/orangewall.55190d15562cd2ab2ce7.jpg",
+    "static/media/meeting1.jpg": "/static/media/meeting1.41264fe5f3a384f6b434.jpg",
+    "static/media/yellowplant.jpg": "/static/media/yellowplant.11bb6b916f0bc9b2ae9d.jpg",
+    "static/media/gs.png": "/static/media/gs.7f9632d589bb740efa05.png",
+    "static/media/research.svg": "/static/media/research.0174d5489f1d91361b7b33c55e7ed15b.svg",
+    "index.html": "/index.html",
+    "static/media/gs.svg": "/static/media/gs.6c4260401cadae665a2a511254d8e803.svg",
+    "static/media/dev.svg": "/static/media/dev.fd240f284af051d8deb4658fd74aaae9.svg",
+    "static/media/edu.svg": "/static/media/edu.4f89865767138a80ed6dc22f5d1416ae.svg",
+    "main.90af462c.css.map": "/static/css/main.90af462c.css.map",
+    "main.7b6ea633.js.map": "/static/js/main.7b6ea633.js.map",
+    "787.c1f1395e.chunk.js.map": "/static/js/787.c1f1395e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.90af462c.css",
+    "static/js/main.7b6ea633.js"
+  ]
+}
