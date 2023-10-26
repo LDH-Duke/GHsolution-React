@@ -1,0 +1,25 @@
+#home-main {
+    padding-top: 88px;
+    margin: 0 210px;
+    margin-bottom: 100px;
+}
+
+#home-main .wrap-main {
+    margin-top: 100px;
+    padding: 100px 0;
+    background-image: url('../../img/brick-wall1920.jpg');
+    background-size: cover;
+    border-radius: 10px;
+}
+
+#home-main .title {
+    font-weight: bold;
+    font-size: 53px;
+    color: white;
+}
+
+#home-main .title-contents {
+    margin-top: 60px;
+    font-size: 24px;
+    color: white;
+}

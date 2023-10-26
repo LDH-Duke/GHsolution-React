@@ -7,7 +7,7 @@ function AboutIntro() {
         <div id='aboutintro'>
             <div className='wrap-aintro'>
                 <div className='aintro-title'>
-                    <span>GuHyun</span>
+                    <span>(주)구현솔루션</span>
                 </div>
                 <div className='aintro-contents'>
                     <p>

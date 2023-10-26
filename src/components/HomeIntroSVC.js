@@ -9,7 +9,7 @@ function HomeIntroSVC(props) {
         <div id='introservice'>
             <div className='wrap-intro-svc'>
                 <div className='introsvc-title'>
-                    <h3>GuHyun Service</h3>
+                    <h3>Our Service</h3>
                 </div>
                 <ul className='introsvc-item'>
                     {
@@ -17,13 +17,13 @@ function HomeIntroSVC(props) {
 
                             // console.log(content, idx)
                             return (
-                                <li key={idx} onClick={()=>{props.setView(idx)}}>
+                                <li key={idx} onClick={() => { props.setView(idx) }}>
                                     < li className='svc-img' >
                                         <img src={content.img} alt='이미지'></img>
                                     </li>
                                     <li className='svc-item'>
                                         <span style={{ 'font-weight': 'bold', 'font-size': '30px' }}>{content.title}</span>
-                                        <span style={{'display':'inline-block', 'text-align':'left'}}>{content.content}</span>
+                                        <span style={{ 'display': 'inline-block', 'text-align': 'left' }}>{content.content}</span>
                                         <Link to={`/service/${content.url}`}>더보기 Click</Link>
                                     </li>
 

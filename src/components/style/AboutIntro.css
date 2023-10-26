@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 963px;
+    height: 645px;
     /* padding-top: 88px; */
     margin: 0 350px;
 }
@@ -14,29 +14,41 @@
 }
 
 #aboutintro>div>.aintro-title {
-    font-size: 70px;
+    font-size: 40px;
     font-weight: bold;
     position: relative;
 }
 
-#aboutintro>div>.aintro-title::after {
+#aboutintro>div>.aintro-title:after {
     position: absolute;
     content: "";
-    left: 45%;
-    top: 50%;
+
+    /* top: 50%; */
     /*시작 위치*/
     transform: translateX(-50%);
     /*동작방향? 범위느낌*/
-    width: 300px;
-    height: 40px;
+    width: 100px;
+    height: 4px;
     background: orange;
     transition: all 0.3s ease-out;
     z-index: -1;
 }
 
+#aboutintro .aintro-title:after {
+    left: 50%;
+    bottom: -10px;
+}
+
+#aboutintro .aintro-title:before {
+    left: 50%;
+    top: -10px;
+}
+
 #aboutintro>div>.aintro-contents {
     margin-top: 5%;
     margin-bottom: 5%;
+    font-size: 22px;
+    font-weight: 550;
 }
 
 #aboutintro>div>.aintro-img {
@@ -45,7 +57,7 @@
     /* background: #a9a9a9; */
 }
 
-#aboutintro>div>.aintro-img>img{
+#aboutintro>div>.aintro-img>img {
     width: 100%;
     height: 100%;
     border-radius: 10px;

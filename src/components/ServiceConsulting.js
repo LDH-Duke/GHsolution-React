@@ -33,7 +33,7 @@ function ServiceConsulting() {
                         컨설팅 분야
                     </div>
                     <div className='explain'>
-                        구현 솔루션은 소프트웨어와 관련된 모든 분야에 대해 컨설팅을 진행합니다.
+                        구현솔루션은 소프트웨어와 관련된 모든 분야에 대해 컨설팅을 진행합니다.
                     </div>
                     <div className='target-contents'>
                         {

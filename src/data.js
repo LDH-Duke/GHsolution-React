@@ -153,9 +153,9 @@ let data = [
             {
                 name: 'home',
                 sections: {
-                    'Main': 963,
-                    'Introduction': 963,
-                    'service': 963
+                    'Main': 654,
+                    'Introduction': 645,
+                    'service': 745
                 }
             },
             {

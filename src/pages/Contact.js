@@ -14,7 +14,7 @@ function Contact() {
                 </div>
                 <div className='contact-item'>
                     <div className='con-name'>
-                        <sapn>GuHyeon</sapn>
+                        <sapn>(주)구현솔루션</sapn>
                     </div>
                     <ul>
                         <li>Address : {datas.address}</li>

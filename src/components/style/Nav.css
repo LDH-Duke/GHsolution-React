@@ -140,7 +140,16 @@
 }
  */
 
-.tab-link,
+.tab-link {
+    color: #000000;
+    font-weight: bold;
+}
+
+.nav .nav-logo {
+    font-size: 18px;
+}
+
+
 .sub-link {
     color: black;
 }
