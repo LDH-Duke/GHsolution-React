@@ -1,7 +1,7 @@
 /* #consulting */
 #consulting {
     display: flex;
-    margin: 0 210px;
+    margin: 0 350px;
     justify-content: center;
 }
 
@@ -10,7 +10,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin: 50px 0;
+    margin: 80px 0;
+    
 }
 
 #consulting>div>.intro-consult {
@@ -44,10 +45,10 @@
 #consulting>div>div>.intro-contents {
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
-    margin: 10% 0;
-    height: 200px;
+    margin: 80px 0;
+    height: 120px;
 }
 
 #consulting>div>div>div>.img {
@@ -66,7 +67,7 @@
 }
 
 #consulting>div>div>div>div>span {
-    font-size: 26px;
+    font-size: 18px;
     font-weight: 500;
     line-height: 200%;
 }
@@ -104,7 +105,7 @@
     border-radius: 5px;
     padding: 10px;
     margin: 5px;
-    font-size: 21px;
+    font-size: 16px;
     font-weight: bold;
     color: #666666;
 }

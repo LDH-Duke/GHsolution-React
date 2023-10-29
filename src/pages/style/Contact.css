@@ -7,6 +7,7 @@
     background-color: #3a3a3a;
     opacity: 1;
     color: white;
+    animation : smoothAppear 1s
 }
 
 #contact>.wrap-contact{

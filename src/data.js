@@ -153,7 +153,7 @@ let data = [
             {
                 name: 'home',
                 sections: {
-                    'Main': 654,
+                    'Main': 650,
                     'Introduction': 645,
                     'service': 745
                 }

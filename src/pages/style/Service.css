@@ -1,3 +1,11 @@
 .service {
     height: 100vh;
 }
+
+#servicepost{
+    animation: smoothAppear 1s;
+}
+
+#consulting {
+    animation: smoothAppear 1s;
+}

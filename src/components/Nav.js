@@ -29,7 +29,7 @@ function Nav(props) {
                                     <Link to='/service/dev' onClick={() => { props.setView(2) }} className='sub-link'>개발</Link>
 
                                 </li>
-                                <li>
+                                <li> 
                                     <Link to='/service/consulting' onClick={() => { props.setView(3) }} className='sub-link'>컨설팅</Link>
                                 </li>
                             </ul>
