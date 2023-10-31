@@ -11,8 +11,8 @@
     flex-direction: column;
     justify-content: center;
     padding: 100px 0;
-    background-image: url('../../img/wave1.jpg');
-    opacity: 0.9 ;
+    background-image: url('../../img/paint.jpg');
+    opacity: 1;
     height: 100%;
     background-size: cover;
     border-radius: 10px;
