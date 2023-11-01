@@ -19,7 +19,7 @@ function EduEnterprise() {
                         </p>
                     </div>
                 </div>
-                
+
                 <div className='service-card'>
                     <div className='title'>
                         교육 분야
@@ -53,7 +53,29 @@ function EduEnterprise() {
                 </div>
 
                 <div className='slide'>
-
+                    <div className='title'>
+                        포트폴리오
+                    </div>
+                    <ul className='wrap-slide'>
+                        {
+                            portfolio.map((card, idx) => {
+                                return (
+                                    <li className='slide-card'>
+                                        <div className='card-img'>
+                                            <img alt='img'></img>
+                                            <span>{card.title}</span>
+                                        </div>
+                                        <div className='card-title'>
+                                            <span>{card.title}</span>
+                                        </div>
+                                        <div className='hidden-contents'>
+                                            <span>{card.contents}</span>
+                                        </div>
+                                    </li>
+                                )
+                            })
+                        }
+                    </ul>
                 </div>
 
             </div>
