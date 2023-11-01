@@ -7,10 +7,13 @@ function EduNav(porps) {
         <div id='edunav'>
             <ul className='wrap-edunav'>
                 <li>
-                    <span onClick={() => { setView(0) }}>Enterprise</span>
+                    {
+                        console.log(setView)
+                    }
+                    <span className={porps.show === 0 ? 'selected' : ''} onClick={() => { setView(0) }} >Enterprise</span>
                 </li>
                 <li>
-                    <span onClick={() => { setView(1) }}>Students</span>
+                    <span className={porps.show === 1 ? 'selected' : ''} onClick={() => { setView(1) }} >Students</span>
                 </li>
             </ul>
 

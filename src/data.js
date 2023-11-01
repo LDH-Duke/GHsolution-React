@@ -191,6 +191,35 @@ let data = [
                 contents: ['최종 문서 평가 / 샘플 테스트 수행', 'GS인증 품질 평가 방법 소개', '결함 관리 프로세스 점검', '테스트 산출물 작성지원', '제품 개선 사항 조언']
             }
         ]
+    },
+    {
+        ent_edu_portfolio:[
+            {
+                img:'',
+                title:'삼성 DB 교육',
+                contents:'삼성전자 직원 교육'
+            },
+            {
+                img:'',
+                title:'삼성 DB 교육',
+                contents:'삼성전자 직원 교육'
+            },
+            {
+                img:'',
+                title:'삼성 DB 교육',
+                contents:'삼성전자 직원 교육'
+            },
+            {
+                img:'',
+                title:'삼성 DB 교육',
+                contents:'삼성전자 직원 교육'
+            },
+            {
+                img:'',
+                title:'삼성 DB 교육',
+                contents:'삼성전자 직원 교육'
+            },
+        ]
     }
 
 ]
