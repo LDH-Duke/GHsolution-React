@@ -13,20 +13,20 @@
     margin: 80px 0;
 }
 
-#consulting>div>.intro-consult {
+#consulting .intro-consult {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
 }
 
-#consulting>div>div>.title {
+#consulting .title {
     position: relative;
     font-size: 40px;
     font-weight: bold;
 }
 
-#consulting>div>div>.title::after {
+#consulting .title::after {
     position: absolute;
     content: "";
     left: 50%;
@@ -41,7 +41,7 @@
     z-index: -1;
 }
 
-#consulting>div>div>.intro-contents {
+#consulting .intro-contents {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -50,14 +50,14 @@
     height: 120px;
 }
 
-#consulting>div>div>div>.img {
+#consulting .img {
     display: flex;
     justify-content: center;
     width: 300px;
     height: 100%;
 }
 
-#consulting>div>div>div>.text {
+#consulting .text {
     display: flex;
     flex: 1;
     align-items: flex-start;
@@ -73,13 +73,13 @@
 
 /*target*/
 
-#consulting>div>.target {
+#consulting .target {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
-#consulting>div>div>.target-contents {
+#consulting .target-contents {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -90,7 +90,7 @@
 }
 
 
-#consulting>div>div>.explain {
+#consulting .explain {
     display: flex;
     margin: 5% 0;
     font-size: 22px;
@@ -99,7 +99,7 @@
 
 
 
-#consulting>div>div>div>.target-keyword {
+#consulting .target-keyword {
     border: 1px solid #bdbdbd;
     border-radius: 5px;
     padding: 10px;
@@ -109,7 +109,7 @@
     color: #666666;
 }
 
-#consulting>div>div>div>.target-keyword:hover {
+#consulting .target-keyword:hover {
     background-color: #ffa500;
     transition: all 0.3s ease-out;
 }
@@ -117,32 +117,32 @@
 
 /*procedure*/
 
-#consulting>div>.procedure {
+#consulting .procedure {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
 }
 
-#consulting>div>div>.proc-contents {
+#consulting .proc-contents {
     display: flex;
     margin: 10% 0;
     width: 100%;
     justify-content: center;
 }
 
-#consulting>div>div>div>.wrap-card {
+#consulting .wrap-card {
     display: flex;
     justify-content: space-around;
     width: 100%;
 }
 
-#consulting>div>div>div>ul>.proc-card {
+#consulting .proc-card {
     border: 2px solid rgb(182, 182, 182);
     padding: 30px 20px;
 }
 
-#consulting>div>div>div>ul>li>.card-header {
+#consulting .card-header {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -155,14 +155,14 @@
     border: 1px solid gray;
 } */
 
-#consulting>div>div>div>ul>li>.card-header>span {
+#consulting .card-header>span {
     margin: 20px 0;
     font-size: 20px;
     font-weight: bold;
 
 }
 
-#consulting>div>div>div>ul>li>.card-body {
+#consulting .card-body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -171,7 +171,7 @@
 
 }
 
-#consulting>div>div>div>ul>li>.card-body>span {
+#consulting .card-body>span {
     margin: 5px;
     font-weight: 500;
     color: rgb(55, 55, 55);

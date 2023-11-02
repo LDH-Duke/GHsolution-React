@@ -1,33 +1,85 @@
-import React from 'react'
-import data from '../data'
+import React, { useState, useEffect } from 'react'
 import './style/EduStudents.css'
+import data from '../data'
 
-function EduStudents() {
+function EduEnterprise() {
     const datas = data[5].ent_card
+    const portfolio = data[8].stu_edu_portfolio
+
+    const slideWidth = 200, 
+    slideMargin = 30,
+    slideLen = portfolio.length;
+    let index = 1
+
+    // const [index, setIndex] = useState(1);
+    const [slide, setSlides] = useState(null)
+
+    useEffect(()=>{
+        const slides = document.getElementById('slides');
+        slides.style.width = `${(slideWidth + slideMargin)*slideLen - slideMargin}px`
+    },[])
+
+    const preSlide = () =>{
+        const slides = document.getElementById('slides');
+        
+        if(index > 1){
+            // console.log("이전 버튼 동작 전 : "+index)
+            index = index - 1
+            slides.style.left = (-index+1) * 230 + 'px';            
+            // console.log("이전 버튼 동작 후 : "+index)
+        }else{
+            index = 1
+            slides.style.left = 0 + 'px';
+        }
+            
+
+    }
+
+    const nextSlide = ()=>{
+        const slides = document.getElementById('slides');
+        
+        if(index < slideLen - 4 ){
+            // console.log('다음 버튼 동작 전 : '+index)
+            slides.style.left = -index * 230 + 'px';
+            index += 1 
+            // console.log('다음 버튼 동작 후 : ' +index)
+        }else{
+            // console.log('최대값 : '+ index)
+            index = 1
+            slides.style.left = 0 * 230 + 'px';
+        }
+        
+
+    }
+
 
     return (
-        <div id='students'>
+        <div id='student'>
             <div className='wrap-stu'>
-                <div className='stu-title'>
-                    <span>Students Education</span>
+                <div className='intro-edu'>
+                    <div className='title'>
+                        학생 교육 서비스
+                    </div>
+                    <div className='intro-contents'>
+                        <p>
+                            학생들에게 필요한 SW교육(기초 프로그래밍, 데이터 분석 등)을 지원합니다.
+                        </p>
+                    </div>
                 </div>
-                <div className='stu-contents'>
-                    <p>
-                        (주)구현솔루션은 머리에 있는 상상을 현실로 구현하는 기업입니다.<br />
-                        (주)구현솔루션은 머리에 있는 상상을 현실로 구현하는 기업입니다.(주)구현솔루션은 머리에 있는 상상을 현실로 구현하는 기업입니다.<br />
-                        (주)구현솔루션은 머리에 있는 상상을 현실로 구현하는 기업입니다.(주)구현솔루션은 머리에 있는 상상을 현실로 구현하는 기업입니다.(주)구현솔루션은 머리에 있는 상상을<br />
-                        (주)구현솔루션은 머리에 있는 상상을 현실로 구현하는 기업입니다.(주)구현솔루션은 머리에 있는 상<br />
 
-                    </p>
-                </div>
-                <div className='stu-items'>
+                <div className='service-card'>
+                    <div className='title'>
+                        교육 분야
+                    </div>
                     <ul className='items'>
                         {
                             datas.map((card, idx) => {
                                 return (
                                     <li className='card'>
                                         <li className='card-img'>
-                                            <img src='' alt='이미지'></img>
+                                            <div className='img'>
+                                                <img src='' alt='이미지'></img>
+                                            </div>
                                         </li>
                                         {
                                             Object.keys(card).map((key, idx) => {
@@ -46,9 +98,47 @@ function EduStudents() {
                         }
                     </ul>
                 </div>
+
+                <div className='slide'>
+                    <div className='title'>
+                        포트폴리오
+                    </div>
+                    <div className='wrap-slides'>
+                        <ul id='slides' className='slides'>
+                            {
+                                portfolio.map((card, idx) => {
+                                    return (
+                                        <li id='slide-card' className='slide-card'>
+                                            <div className='card-img'>
+                                                {/* <img alt='img'></img> */}
+                                                <span>{card.title}</span>
+                                            </div>
+                                            {/* <div className='card-title'>
+                                                <span>{card.title}</span>
+                                            </div> */}
+                                            <div className='hidden-contents'>
+                                                <span>{card.contents}</span>
+                                                <span>{idx}</span>
+                                            </div>
+                                        </li>
+                                    )
+                                })
+                            }
+                        </ul>
+                        <div className='preBtn'>
+                            <span onClick={preSlide}>{'<'}</span>
+                        </div>
+                        <div className='nextBtn'>
+                            <span onClick={nextSlide}>{'>'}</span>
+                        </div>
+                    </div>
+
+                    
+                </div>
+
             </div>
         </div>
     )
 }
 
-export default EduStudents
+export default EduEnterprise

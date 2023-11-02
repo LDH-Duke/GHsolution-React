@@ -134,17 +134,17 @@ let data = [
             {
                 img: '',
                 name: 'DataBase',
-                explain: '(주)구현솔루션은 기업의 직원들을 대상으로 Database 교육을 제공합니다.'
+                explain: '(주)구현솔루션은 기업을 대상으로 Database 교육을 제공합니다.'
             },
             {
                 img: '',
                 name: 'DataBase',
-                explain: '(주)구현솔루션은 기업의 직원들을 대상으로 Database 교육을 제공합니다.'
+                explain: '(주)구현솔루션은 기업을 대상으로 Database 교육을 제공합니다.'
             },
             {
                 img: '',
                 name: 'DataBase',
-                explain: '(주)구현솔루션은 기업의 직원들을 대상으로 Database 교육을 제공합니다.'
+                explain: '(주)구현솔루션은 기업을 대상으로 Database 교육을 제공합니다.'
             },
         ]
     },
@@ -196,28 +196,82 @@ let data = [
         ent_edu_portfolio:[
             {
                 img:'',
-                title:'삼성 DB 교육',
-                contents:'삼성전자 직원 교육'
+                title:'기업 교육',
+                contents:'데이터 베이스'
             },
             {
                 img:'',
-                title:'삼성 DB 교육',
-                contents:'삼성전자 직원 교육'
+                title:'기업 교육',
+                contents:'데이터 베이스'
+            },{
+                img:'',
+                title:'기업 교육',
+                contents:'데이터 베이스'
+            },{
+                img:'',
+                title:'기업 교육',
+                contents:'데이터 베이스'
+            },{
+                img:'',
+                title:'기업 교육',
+                contents:'데이터 베이스'
+            },{
+                img:'',
+                title:'기업 교육',
+                contents:'데이터 베이스'
+            },{
+                img:'',
+                title:'기업 교육',
+                contents:'데이터 베이스'
+            },{
+                img:'',
+                title:'기업 교육',
+                contents:'데이터 베이스'
+            },{
+                img:'',
+                title:'기업 교육',
+                contents:'데이터 베이스'
+            },{
+                img:'',
+                title:'기업 교육',
+                contents:'데이터 베이스'
+            },
+        ],
+        stu_edu_portfolio:[
+            {
+                img:'',
+                title:'학생 교육',
+                contents:'아두이노'
             },
             {
                 img:'',
-                title:'삼성 DB 교육',
-                contents:'삼성전자 직원 교육'
+                title:'학생 교육',
+                contents:'아두이노'
             },
             {
                 img:'',
-                title:'삼성 DB 교육',
-                contents:'삼성전자 직원 교육'
+                title:'학생 교육',
+                contents:'아두이노'
             },
             {
                 img:'',
-                title:'삼성 DB 교육',
-                contents:'삼성전자 직원 교육'
+                title:'학생 교육',
+                contents:'아두이노'
+            },
+            {
+                img:'',
+                title:'학생 교육',
+                contents:'아두이노'
+            },
+            {
+                img:'',
+                title:'학생 교육',
+                contents:'아두이노'
+            },
+            {
+                img:'',
+                title:'학생 교육',
+                contents:'아두이노'
             },
         ]
     }

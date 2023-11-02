@@ -1,17 +1,68 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import './style/EduEnterprise.css'
 import data from '../data'
 
 function EduEnterprise() {
     const datas = data[5].ent_card
     const portfolio = data[8].ent_edu_portfolio
+
+    const slideWidth = 200, 
+    slideMargin = 30,
+    slideLen = portfolio.length;
+    let index = 1
+
+    // const [index, setIndex] = useState(1);
+    const [slide, setSlides] = useState(null)
+
+    useEffect(()=>{
+        const slides = document.getElementById('slides');
+        slides.style.width = `${(slideWidth + slideMargin)*slideLen - slideMargin}px`
+    },[])
+
+    const preSlide = () =>{
+        const slides = document.getElementById('slides');
+        // console.log(index)
+        if(index > 1){
+            // console.log("이전 버튼 동작 전 : "+index)
+            index = index - 1
+            slides.style.left = (-index+1) * 230 + 'px';            
+            // console.log("이전 버튼 동작 후 : "+index)
+        }else{
+            index = 1
+            slides.style.left = 0 + 'px';
+        }
+            
+
+    }
+
+    const nextSlide = ()=>{
+        const slides = document.getElementById('slides');
+        
+        if(index < slideLen - 4 ){
+            // console.log('다음 버튼 동작 전 : '+index)
+            slides.style.left = -index * 230 + 'px';
+            index += 1 
+            // console.log('다음 버튼 동작 후 : ' +index)
+        }else{
+            // console.log('최대값 : '+ index)
+            index = 1
+            slides.style.left = 0 * 230 + 'px';
+        }
+        
+
+    }
+
+    // useEffect(() => {
+    //     // slides.style.translate = `${sliderX}px 0`;
+    // }, [sliderX]);
+
     console.log(datas)
     return (
         <div id='enterprise'>
             <div className='wrap-ent'>
                 <div className='intro-edu'>
                     <div className='title'>
-                        Enterprise Education
+                        기업 교육 서비스
                     </div>
                     <div className='intro-contents'>
                         <p>
@@ -56,26 +107,37 @@ function EduEnterprise() {
                     <div className='title'>
                         포트폴리오
                     </div>
-                    <ul className='wrap-slide'>
-                        {
-                            portfolio.map((card, idx) => {
-                                return (
-                                    <li className='slide-card'>
-                                        <div className='card-img'>
-                                            <img alt='img'></img>
-                                            <span>{card.title}</span>
-                                        </div>
-                                        <div className='card-title'>
-                                            <span>{card.title}</span>
-                                        </div>
-                                        <div className='hidden-contents'>
-                                            <span>{card.contents}</span>
-                                        </div>
-                                    </li>
-                                )
-                            })
-                        }
-                    </ul>
+                    <div className='wrap-slides'>
+                        <ul id='slides' className='slides'>
+                            {
+                                portfolio.map((card, idx) => {
+                                    return (
+                                        <li id='slide-card' className='slide-card'>
+                                            <div className='card-img'>
+                                                {/* <img alt='img'></img> */}
+                                                <span>{card.title}</span>
+                                            </div>
+                                            {/* <div className='card-title'>
+                                                <span>{card.title}</span>
+                                            </div> */}
+                                            <div className='hidden-contents'>
+                                                <span>{card.contents}</span>
+                                                <span>{idx}</span>
+                                            </div>
+                                        </li>
+                                    )
+                                })
+                            }
+                        </ul>
+                        <div className='preBtn'>
+                            <span onClick={preSlide}>{'<'}</span>
+                        </div>
+                        <div className='nextBtn'>
+                            <span onClick={nextSlide}>{'>'}</span>
+                        </div>
+                    </div>
+
+                    
                 </div>
 
             </div>

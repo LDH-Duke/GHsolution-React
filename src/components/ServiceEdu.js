@@ -12,7 +12,7 @@ function ServiceEdu() {
     }
 
     return (
-        <div className='edu'>
+        <div id='edu'>
             <EduNav setView={setView} show={show} />
             {
                 show == 0 ? <EduEnterprise /> : <EduStudents />

@@ -1,48 +1,151 @@
-#students {
-    height: 963px;
-    width: 100%;
-    padding-top: 88px;
+#student {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* height: 963px; */
 }
 
-#students>.wrap-stu {
+#student .wrap-ent {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#student .intro-edu{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
-#students>div>.stu-title {
-    margin-top: 8%;
+#student .title {
+    position: relative;
     font-size: 40px;
     font-weight: bold;
 }
 
-#students>div>.stu-contents {
-    margin: 10% 0;
+#student .title::after {
+    position: absolute;
+    content: "";
+    left: 50%;
+    bottom: -10px;
+    /*시작 위치*/
+    transform: translateX(-50%);
+    /*동작방향? 범위느낌*/
+    width: 100%;
+    height: 4px;
+    background: orange;
+    transition: all 0.3s ease-out;
+    z-index: -1;
+}
+
+#student .intro-contents {
+    margin: 7% 0;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
-#students>div>.stu-items {
+#student .service-card {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     width: 100%;
 }
 
-#students>div>.stu-items>ul {
+#student .items {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin: 10% 0;
+}
+
+#student .card {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    border: 2px solid darkgray;
+    border-radius: 20px;
+    overflow: hidden;
 }
 
-#students>div>.stu-items>ul>li {
+
+#student .card:not(:last-of-type) {
+    margin-bottom: 50px;
+}
+
+
+
+#student .img {
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+    border-radius: 20px;
+
+}
+
+#student .field {
+    margin: 0 20px;
+}
+
+#student .slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+#student .wrap-slides{
+    display: flex;
+    width: 1120px;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+#student .slides {
+    display: flex;
+    flex-direction: row;
+    margin: 7% 0;
+    position: relative;
+    left: 0;
+    top: 0;
+    transition: left 0.5s ease-out;
+}
+
+#student .slide-card {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 250px;
-    height: 300px;
-    margin: 0 30px;
-    border: 1px solid black;
+    border: 2px solid darkgray;
+    border-radius: 10px;
+    height: 250px;
+    width: 200px ;
+    background-color: rgb(255, 200, 48);
+    color: rgb(68, 68, 68);
+    font-size: 21px;
+    font-weight: bold;
+}
+
+
+
+
+#student .slide-card:not(:last-of-type){
+    margin-right: 30px;
+}
+
+#student .preBtn{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    font-size: 30px;
+}
+
+#student .nextBtn{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    font-size: 30px;
 }
