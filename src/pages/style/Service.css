@@ -2,7 +2,7 @@
     height: 100vh;
 }
 
-#servicepost{
+#servicepost {
     animation: smoothAppear 1s;
 }
 
@@ -14,10 +14,14 @@
     animation: smoothAppear 1s;
 }
 
-#edu{
+#edu {
     animation: smoothAppear 1s;
 }
 
-#student{
+#student {
+    animation: smoothAppear 1s;
+}
+
+#research {
     animation: smoothAppear 1s;
 }

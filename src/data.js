@@ -193,86 +193,125 @@ let data = [
         ]
     },
     {
-        ent_edu_portfolio:[
+        ent_edu_portfolio: [
             {
-                img:'',
-                title:'기업 교육',
-                contents:'데이터 베이스'
+                img: '',
+                title: '기업 교육',
+                contents: '데이터 베이스'
             },
             {
-                img:'',
-                title:'기업 교육',
-                contents:'데이터 베이스'
-            },{
-                img:'',
-                title:'기업 교육',
-                contents:'데이터 베이스'
-            },{
-                img:'',
-                title:'기업 교육',
-                contents:'데이터 베이스'
-            },{
-                img:'',
-                title:'기업 교육',
-                contents:'데이터 베이스'
-            },{
-                img:'',
-                title:'기업 교육',
-                contents:'데이터 베이스'
-            },{
-                img:'',
-                title:'기업 교육',
-                contents:'데이터 베이스'
-            },{
-                img:'',
-                title:'기업 교육',
-                contents:'데이터 베이스'
-            },{
-                img:'',
-                title:'기업 교육',
-                contents:'데이터 베이스'
-            },{
-                img:'',
-                title:'기업 교육',
-                contents:'데이터 베이스'
+                img: '',
+                title: '기업 교육',
+                contents: '데이터 베이스'
+            }, {
+                img: '',
+                title: '기업 교육',
+                contents: '데이터 베이스'
+            }, {
+                img: '',
+                title: '기업 교육',
+                contents: '데이터 베이스'
+            }, {
+                img: '',
+                title: '기업 교육',
+                contents: '데이터 베이스'
+            }, {
+                img: '',
+                title: '기업 교육',
+                contents: '데이터 베이스'
+            }, {
+                img: '',
+                title: '기업 교육',
+                contents: '데이터 베이스'
+            }, {
+                img: '',
+                title: '기업 교육',
+                contents: '데이터 베이스'
+            }, {
+                img: '',
+                title: '기업 교육',
+                contents: '데이터 베이스'
+            }, {
+                img: '',
+                title: '기업 교육',
+                contents: '데이터 베이스'
             },
         ],
-        stu_edu_portfolio:[
+        stu_edu_portfolio: [
             {
-                img:'',
-                title:'학생 교육',
-                contents:'아두이노'
+                img: '',
+                title: '학생 교육',
+                contents: '아두이노'
             },
             {
-                img:'',
-                title:'학생 교육',
-                contents:'아두이노'
+                img: '',
+                title: '학생 교육',
+                contents: '아두이노'
             },
             {
-                img:'',
-                title:'학생 교육',
-                contents:'아두이노'
+                img: '',
+                title: '학생 교육',
+                contents: '아두이노'
             },
             {
-                img:'',
-                title:'학생 교육',
-                contents:'아두이노'
+                img: '',
+                title: '학생 교육',
+                contents: '아두이노'
             },
             {
-                img:'',
-                title:'학생 교육',
-                contents:'아두이노'
+                img: '',
+                title: '학생 교육',
+                contents: '아두이노'
             },
             {
-                img:'',
-                title:'학생 교육',
-                contents:'아두이노'
+                img: '',
+                title: '학생 교육',
+                contents: '아두이노'
             },
             {
-                img:'',
-                title:'학생 교육',
-                contents:'아두이노'
+                img: '',
+                title: '학생 교육',
+                contents: '아두이노'
             },
+        ]
+    },
+    {
+        research: [
+            {
+                icon: () => (<svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 0 24 24" width="40px" fill="#205bff"><path d="M0 0h24v24H0z" fill="none" /><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14h-2V9h-2V7h4v10z" /></svg>),
+                title: '연구 아이디어 회의',
+                contents: '연구를 위한 아이디어 회의를 진행하여 연구 방향을 설정합니다.'
+            },
+            {
+                icon: () => (<svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 0 24 24" width="40px" fill="#205bff"><path d="M0 0h24v24H0z" fill="none" /><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4 8c0 1.11-.9 2-2 2h-2v2h4v2H9v-4c0-1.11.9-2 2-2h2V9H9V7h4c1.1 0 2 .89 2 2v2z" /></svg>),
+                title: '연구 방법 설정',
+                contents: '설정한 연구 컨셉에 맞는 연구 방향을 설정합니다.'
+            },
+            {
+                icon: () => (<svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 0 24 24" width="40px" fill="#205bff"><path d="M.01 0h24v24h-24z" fill="none" /><path d="M19.01 3h-14c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4 7.5c0 .83-.67 1.5-1.5 1.5.83 0 1.5.67 1.5 1.5V15c0 1.11-.9 2-2 2h-4v-2h4v-2h-2v-2h2V9h-4V7h4c1.1 0 2 .89 2 2v1.5z" /></svg>),
+                title: '연구 진행 점검',
+                contents: '진행 중인 연구를 점검하고 진행 연구에 추가적인 연구 사항이 있는지 확인합니다. '
+            },
+            {
+                icon: () => (<svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 0 24 24" width="40px" fill="#205bff"><path d="M0 0h24v24H0z" fill="none" /><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4 14h-2v-4H9V7h2v4h2V7h2v10z" /></svg>),
+                title: '연구 결과',
+                contents: '최종적으로 도출된 연구 결과를 점검하고 연구결과에 대한 성과를 얻을 수 있도록 도와드립니다.'
+            },
+        ],
+        research_portfolio: [
+            {
+                name: '프로젝트 명',
+                contents: '프로젝트에 대한 간략한 연구소개입니다.'
+            },
+            {
+                name: '프로젝트 명',
+                contents: '프로젝트에 대한 간략한 연구소개입니다.'
+            },
+            {
+                name: '프로젝트 명',
+                contents: '프로젝트에 대한 간략한 연구소개입니다.'
+            },
+
         ]
     }
 
