@@ -22,7 +22,7 @@ function HomeIntroSVC(props) {
                                         <img src={content.img} alt='이미지'></img>
                                     </li>
                                     <li className='svc-item'>
-                                        <span style={{ 'font-weight': 'bold', 'font-size': '30px' }}>{content.title}</span>
+                                        <span >{content.title}</span>
                                         <span style={{ 'display': 'inline-block', 'text-align': 'left' }}>{content.content}</span>
                                         <Link to={`/service/${content.url}`}>더보기 Click</Link>
                                     </li>

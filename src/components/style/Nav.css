@@ -102,10 +102,6 @@
 }
 
 
-
-
-
-
 /* .sub-tab {
     background: white;
     border-radius: 10px;
@@ -152,4 +148,45 @@
 
 .sub-link {
     color: black;
+}
+
+
+@media screen and (max-width : 480px) {
+    .wrap-nav {
+        margin: 0 30px;
+    }
+
+    .nav-tab>ul {
+        width: 150px;
+        height: 60px;
+    }
+
+    .nav-tab>ul>li {
+        font-size: 14px;
+    }
+    
+    
+    /* nav hover effect code*/
+    .nav-tab>ul>li>.tab-link {
+        padding: 10px 0;
+    }
+    
+    .nav-tab>ul>li>.tab-link::after {
+        height: 2px;
+    }
+    
+    .sub-tab {
+        top: 50px;
+        font-size: 12px;
+    }
+
+    .tab-link {
+        color: #000000;
+        font-weight: bold;
+    }
+    
+    .nav .nav-logo {
+        font-size: 15px;
+    }
+
 }

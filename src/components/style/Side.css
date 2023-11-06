@@ -32,3 +32,9 @@
 #side>div>ul>li>.selected {
     background-color: orange;
 }
+
+@media screen and (max-width : 480px){
+    #side{
+        display: none;
+    }
+}

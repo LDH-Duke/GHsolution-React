@@ -39,11 +39,6 @@
     bottom: -10px;
 }
 
-#aboutintro .aintro-title:before {
-    left: 50%;
-    top: -10px;
-}
-
 #aboutintro>div>.aintro-contents {
     margin-top: 5%;
     margin-bottom: 5%;
@@ -61,4 +56,39 @@
     width: 100%;
     height: 100%;
     border-radius: 10px;
+}
+
+
+@media screen and (max-width:480px) {
+    #aboutintro {
+        height: 215px;
+        margin: 0 50px;
+    }
+    
+    #aboutintro>div>.aintro-title {
+        font-size: 18px;;
+    }
+    
+    #aboutintro>div>.aintro-title:after {
+        width: 10%;
+        height: 2px;
+    }
+    
+    #aboutintro .aintro-title:after {
+        left: 50%;
+        bottom: -5px;
+    }
+    #aboutintro>div>.aintro-contents {
+        margin-top: 5%;
+        margin-bottom: 5%;
+        font-size: 11px;
+        font-weight: 550;
+    }
+    
+    #aboutintro>div>.aintro-img {
+        width: 100%;
+        height: 100px;
+        /* background: #a9a9a9; */
+    }
+    
 }
