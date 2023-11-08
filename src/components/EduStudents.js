@@ -6,51 +6,69 @@ function EduEnterprise() {
     const datas = data[5].ent_card
     const portfolio = data[8].stu_edu_portfolio
 
-    const slideWidth = 200, 
-    slideMargin = 30,
-    slideLen = portfolio.length;
+    let slideWidth = 200,
+        slideMargin = 30,
+        slideLen = portfolio.length;
     let index = 1
+
 
     // const [index, setIndex] = useState(1);
     const [slide, setSlides] = useState(null)
 
-    useEffect(()=>{
+    useEffect(() => {
+        if (window.innerWidth <= 480) {
+            slideWidth = 100
+            slideMargin = 10
+        }
         const slides = document.getElementById('slides');
-        slides.style.width = `${(slideWidth + slideMargin)*slideLen - slideMargin}px`
-    },[])
+        slides.style.width = `${(slideWidth + slideMargin) * slideLen - slideMargin}px`
+    }, [])
 
-    const preSlide = () =>{
+    const preSlide = () => {
+
         const slides = document.getElementById('slides');
-        
-        if(index > 1){
+
+        if (window.innerWidth <= 480) {
+            slideWidth = 100
+            slideMargin = 10
+        }
+
+        // console.log(index)
+        if (index > 1) {
             // console.log("이전 버튼 동작 전 : "+index)
             index = index - 1
-            slides.style.left = (-index+1) * 230 + 'px';            
+            slides.style.left = (-index + 1) * (slideWidth + slideMargin) + 'px';
             // console.log("이전 버튼 동작 후 : "+index)
-        }else{
+        } else {
             index = 1
             slides.style.left = 0 + 'px';
         }
-            
+
 
     }
 
-    const nextSlide = ()=>{
+    const nextSlide = () => {
         const slides = document.getElementById('slides');
-        
-        if(index < slideLen - 4 ){
+
+        if (window.innerWidth <= 480) {
+            slideWidth = 100
+            slideMargin = 10
+        }
+
+        if (index < slideLen - 4) {
             // console.log('다음 버튼 동작 전 : '+index)
-            slides.style.left = -index * 230 + 'px';
-            index += 1 
+            slides.style.left = -index * (slideWidth + slideMargin) + 'px';
+            index += 1
             // console.log('다음 버튼 동작 후 : ' +index)
-        }else{
+        } else {
             // console.log('최대값 : '+ index)
             index = 1
             slides.style.left = 0 * 230 + 'px';
         }
-        
+
 
     }
+
 
 
     return (
@@ -133,7 +151,7 @@ function EduEnterprise() {
                         </div>
                     </div>
 
-                    
+
                 </div>
 
             </div>

@@ -36,21 +36,21 @@
     .footer {
         height: 200px;
     }
-    
+
     .wrap-footer {
         margin: 0 50px
     }
-    
+
     .footer-list {
         margin-top: 10px;
         font-size: 9px;
     }
-    
+
     #footer-entitle {
         font-size: 15px;
         font-weight: bold;
     }
-    
+
     #footer-krtitle {
         font-size: 12px;
         font-weight: bold;

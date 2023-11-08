@@ -150,3 +150,85 @@
     right: 10px;
     font-size: 30px;
 }
+
+
+/* 반응형 */
+@media screen and (max-width:480px) {
+
+    #enterprise .title {
+        font-size: 18px;
+    }
+
+    #enterprise .title::after {
+        bottom: -5px;
+        height: 2px;
+    }
+
+    #enterprise .intro-contents {
+        font-size: 11px;
+    }
+
+    #enterprise .service-card {
+        width: 100%;
+    }
+
+    #enterprise .items {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+        margin: 10% 0;
+    }
+
+    #enterprise .card {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid darkgray;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+
+    #enterprise .card:not(:last-of-type) {
+        margin-bottom: 20px;
+    }
+
+
+
+    #enterprise .img {
+        width: 50px;
+        height: 50px;
+        background-color: gray;
+        border-radius: 5px;
+
+    }
+
+    #enterprise .field {
+        margin: 0 10px;
+        font-size: 11px;
+    }
+
+    #enterprise .wrap-slides {
+        width: 210px;
+    }
+
+    #enterprise .slide-card {
+        height: 150px;
+        font-size: 13px;
+    }
+
+    #enterprise .slide-card:not(:last-of-type) {
+        margin-right: 10px;
+    }
+
+    #enterprise .preBtn {
+        font-size: 20px;
+    }
+
+    #enterprise .nextBtn {
+        font-size: 20px;
+    }
+}

@@ -2,3 +2,10 @@
     margin: 0 350px;
 
 }
+
+@media screen and (max-width:480px) {
+    #edu {
+        margin: 0 30px;
+
+    }
+}

@@ -86,3 +86,52 @@
 #servicepost>div>ul>.tab>.selected::after {
     width: 100%;
 }
+
+
+@media screen and (max-width:480px) {
+    #servicepost {
+        height: 350px;
+        padding-top: 60px;
+        margin: 0 30px;
+        /* border-bottom: 1px solid black; */
+    }
+
+    #servicepost>.wrap-spost::before {
+        width: 130%;
+        height: 80%;
+        background-size: 100% 100%;
+    }
+
+    #servicepost>div>.service-title {
+        /* margin-top: 8%; */
+        font-size: 50px;
+    }
+
+    #servicepost>div>ul>.tab {
+        font-size: 18px;
+    }
+
+    #servicepost>div>ul>.tab::after {
+        bottom: 15%;
+        left: -15px;
+        height: 5px;
+    }
+
+    #servicepost>div>ul>.tab:hover::after {
+        width: 100%;
+    }
+
+    #servicepost>div>ul>.tab>a {
+        color: black;
+    }
+
+    #servicepost>div>ul>.tab>a::after {
+        bottom: 15%;
+        left: -15px;
+        height: 5px;
+    }
+
+    #servicepost>div>ul>.tab>.selected::after {
+        width: 100%;
+    }
+}

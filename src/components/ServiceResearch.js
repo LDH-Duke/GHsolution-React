@@ -30,6 +30,11 @@ function ServiceResearch() {
                     <div className='procedure-contents'>
                         {
                             procedure.map((step, idx) => {
+                                // let width, height = 80;
+                                // if (window.innerWidth <= 480) {
+                                //     width = 20
+                                //     height = 20
+                                // }
                                 return (
                                     <div className='step'>
                                         <iconwrapper>{step.icon()}</iconwrapper>

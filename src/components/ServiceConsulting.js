@@ -56,11 +56,16 @@ function ServiceConsulting() {
                         <ul className='wrap-card'>
                             {
                                 cards.map((card, idx) => {
+                                    let width, height = 80;
+                                    if (window.innerWidth <= 480) {
+                                        width = 30
+                                        height = 30
+                                    }
                                     return (
                                         <li className='proc-card'>
                                             <div className='card-header'>
                                                 {/* <img  alt='img'></img> */}
-                                                <iconWrapper>{card.icon()}</iconWrapper>
+                                                <iconWrapper>{card.icon(width, height)}</iconWrapper>
                                                 <span className='card-title'>{card.title}</span>
                                             </div>
                                             <div className='card-body'>

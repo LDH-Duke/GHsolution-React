@@ -7,41 +7,42 @@
     background-color: #3a3a3a;
     opacity: 1;
     color: white;
-    animation : smoothAppear 1s
+    animation: smoothAppear 1s;
 }
 
-#contact>.wrap-contact{
+#contact>.wrap-contact {
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-#contact>.wrap-contact:nth-child(1){
+
+#contact>.wrap-contact:nth-child(1) {
     align-items: flex-start;
 }
 
-#contact>div>.contact-title{
-    padding: 50px;    
+#contact>div>.contact-title {
+    padding: 50px;
     font-size: 70px;
     font-weight: 700;
 }
 
-#contact>div>.contact-item{
+#contact>div>.contact-item {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#contact>div>.contact-item>.con-name{
+#contact>div>.contact-item>.con-name {
     flex: 1;
     font-size: 50px;
     font-weight: 500;
 
 }
 
-#contact>div>.contact-item>ul{
+#contact>div>.contact-item>ul {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -49,4 +50,57 @@
     font-size: 25px;
     font-weight: 600;
 
+}
+
+@media screen and (max-width:480px) {
+    #contact {
+        /* display: flex;
+        flex-direction: column;
+        justify-content: center; */
+        height: 100vh;
+        padding-top: 60px;
+
+    }
+
+    #contact>.wrap-contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 30px;
+    }
+
+    #contact>.wrap-contact:nth-child(1) {
+        align-items: flex-start;
+    }
+
+    #contact>div>.contact-title {
+        padding: 20px;
+        font-size: 11px;
+    }
+
+    #contact>div>.contact-item {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #contact>div>.contact-item>.con-name {
+        flex: 0;
+        font-size: 21px;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+
+    #contact>div>.contact-item>ul {
+        align-items: center;
+        flex: 0;
+        font-size: 15px;
+    }
+
+    #contact li:not(:last-of-type) {
+        margin-bottom: 10px;
+    }
 }

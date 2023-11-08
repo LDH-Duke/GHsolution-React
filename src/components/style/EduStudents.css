@@ -151,3 +151,84 @@
     right: 10px;
     font-size: 30px;
 }
+
+/* 반응형 */
+@media screen and (max-width:480px) {
+
+    #student .title {
+        font-size: 18px;
+    }
+
+    #student .title::after {
+        bottom: -5px;
+        height: 2px;
+    }
+
+    #student .intro-contents {
+        font-size: 11px;
+    }
+
+    #student .service-card {
+        width: 100%;
+    }
+
+    #student .items {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+        margin: 10% 0;
+    }
+
+    #student .card {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid darkgray;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+
+    #student .card:not(:last-of-type) {
+        margin-bottom: 20px;
+    }
+
+
+
+    #student .img {
+        width: 50px;
+        height: 50px;
+        background-color: gray;
+        border-radius: 5px;
+
+    }
+
+    #student .field {
+        margin: 0 10px;
+        font-size: 11px;
+    }
+
+    #student .wrap-slides {
+        width: 210px;
+    }
+
+    #student .slide-card {
+        height: 150px;
+        font-size: 13px;
+    }
+
+    #student .slide-card:not(:last-of-type) {
+        margin-right: 10px;
+    }
+
+    #student .preBtn {
+        font-size: 20px;
+    }
+
+    #student .nextBtn {
+        font-size: 20px;
+    }
+}

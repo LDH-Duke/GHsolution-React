@@ -176,3 +176,136 @@
     font-weight: 500;
     color: rgb(55, 55, 55);
 }
+
+/* 반응형 */
+@media screen and (max-width:480px) {
+
+    #consulting {
+        margin: 0 30px;
+    }
+
+    #consulting>.wrap-consult {
+        margin: 50px 0;
+    }
+
+    #consulting .title {
+        font-size: 18px;
+    }
+
+    #consulting .title::after {
+        bottom: -5px;
+        height: 2px;
+    }
+
+    #consulting .intro-contents {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 5% 0;
+        height: auto;
+    }
+
+    #consulting .img {
+        display: flex;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        flex: 1;
+    }
+
+    #consulting .text {
+        display: flex;
+        flex: 3;
+        align-items: flex-start;
+        padding: 10px;
+        margin-left: 0px;
+    }
+
+    #consulting>div>div>div>div>span {
+        font-size: 9px;
+        line-height: 170%;
+    }
+
+    /*target*/
+
+    #consulting .target-contents {
+        padding: 15px 10px;
+    }
+
+    #consulting .explain {
+        font-size: 11px;
+    }
+
+    #consulting .target-keyword {
+        padding: 3px;
+        margin: 2px;
+        font-size: 9px;
+    }
+
+    #consulting .target-keyword:hover {
+        background-color: #ffa500;
+        transition: all 0.3s ease-out;
+    }
+
+
+    /*procedure*/
+
+    #consulting .procedure {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    #consulting .proc-contents {
+        display: flex;
+        margin: 10% 0;
+        width: 100%;
+        justify-content: center;
+    }
+
+    #consulting .wrap-card {
+        flex-direction: column;
+    }
+
+
+    #consulting .proc-card {
+        display: flex;
+        flex-direction: row;
+        padding: 10px 5px;
+    }
+
+    #consulting .proc-card:not(:last-of-type) {
+        margin-bottom: 10px;
+    }
+
+    #consulting .card-header {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    #consulting .card-header>span {
+        margin: 5px 0;
+        font-size: 10px;
+    }
+
+    #consulting .card-body {
+        display: flex;
+        flex: 3;
+        align-items: center;
+        height: auto;
+        font-size: 9px;
+    }
+
+    #consulting .card-body>span {
+        margin: 0px;
+        font-weight: 500;
+        color: rgb(55, 55, 55);
+    }
+}

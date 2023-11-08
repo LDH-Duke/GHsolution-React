@@ -16,6 +16,25 @@
     font-weight: bold;
 }
 
-#edunav>ul>li .selected{
+#edunav>ul>li .selected {
     color: orange;
+}
+
+@media screen and (max-width:480px) {
+    #edunav {
+        padding: 10px;
+        margin: 10px 0;
+        font-size: 14px;
+        border: 3px solid darkgray;
+        border-radius: 60px;
+    }
+
+    #edunav>ul>li {
+        flex: 1;
+        font-weight: bold;
+    }
+
+    #edunav>ul>li .selected {
+        color: orange;
+    }
 }
